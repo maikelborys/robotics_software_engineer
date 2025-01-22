@@ -1,19 +1,22 @@
-#include "Actuator.h"
-#include <iostream>
+#include "../include/Actuator.h"
 
-Actuator::Actuator(std::string name) : name(name) {}
+// Base class Actuator
+Actuator::Actuator(const std::string& name) : name(name) {}
 
-std::string Actuator::getName() {
+std::string Actuator::getName() const {
     return name;
 }
 
+// Derived class ArmActuator
+ArmActuator::ArmActuator(const std::string& name) : Actuator(name) {}
+
 void ArmActuator::move(int angle) {
-    std::cout << "Moving arm actuator " << name << " to angle " << angle << "." << std::endl;
+    std::cout << "Moving " << name << " to angle: " << angle << " degrees." << std::endl;
 }
 
+// Derived class WheelActuator
+WheelActuator::WheelActuator(const std::string& name) : Actuator(name) {}
+
 void WheelActuator::rotate(int degrees) {
-    if (degrees > 360) {
-        std::cout << "Rotation angle is too large!" << std::endl;
-    }
-    std::cout << "Rotating wheel actuator " << name << " by " << degrees << " degrees." << std::endl;
+    std::cout << "Rotating " << name << " by " << degrees << " degrees." << std::endl;
 }

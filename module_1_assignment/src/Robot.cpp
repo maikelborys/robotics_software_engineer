@@ -1,13 +1,16 @@
-#include "Robot.h"
+#include "../include/Robot.h"
 #include <iostream>
 
-Robot::Robot(std::string name, double speed)
+// Constructor
+Robot::Robot(const std::string& name, double speed)
     : name(name), speed(speed) {}
 
+// Activates an actuator
 void Robot::activateActuator() {
-    std::cout << "Activating actuator for " << name << "." << std::endl;
+    std::cout << "Activating all actuators for robot: " << name << "." << std::endl;
 }
 
-void Robot::deactivateActuator(Actuator actuator) {
-    std::cout << "Deactivating actuator for " << actuator.getName() << "." << std::endl;
+// Deactivates a specific actuator
+void Robot::deactivateActuator(const Actuator& actuator) {
+    std::cout << "Deactivating actuator: " << actuator.getName() << " for robot: " << name << "." << std::endl;
 }

@@ -2,13 +2,13 @@
 #define ROBOT_H
 
 #include <string>
-#include "Actuator.h"
+#include "../include/Actuator.h"
 
 class Robot {
 public:
-    Robot(std::string name, double speed);
+    Robot(const std::string& name, double speed);
     void activateActuator();
-    void deactivateActuator(Actuator actuator);
+    void deactivateActuator(const Actuator& actuator); // Paso por referencia para evitar copias innecesarias.
 
 private:
     std::string name;

@@ -14,6 +14,15 @@ find_package(ament_cmake REQUIRED)
 
 
 # ADD TASK 4 Executables here
+add_executable(task_1 src/task_1.cpp)
+add_executable(task_2 src/task_2.cpp)
+add_executable(task_3 src/task_3.cpp)
+add_executable(robot_simulation 
+    src/main.cpp 
+    src/Actuator.cpp 
+    src/Robot.cpp
+)
+
 
 
 
