@@ -1,0 +1,656 @@
+[0.104s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.104s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74b5c040d810>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74b5c040d240>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74b5c040d240>>, mixin_verb=('build',))
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.235s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.235s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/maikelborys/assignment_ws/src/robotics_software_engineer'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(module_1_assignment) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'module_1_assignment' with type 'ros.ament_cmake' and name 'module_1_assignment'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_2_assignment) by extension 'ros'
+[0.246s] DEBUG:colcon.colcon_core.package_identification:Package 'module_2_assignment' with type 'ros.ament_cmake' and name 'module_2_assignment'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_3_assignment) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'module_3_assignment' with type 'ros.ament_cmake' and name 'module_3_assignment'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'ros'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment) by extension 'python_setup_py'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/module_4_assignment) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'module_4_assessment/module_4_assignment' with type 'ros.ament_cmake' and name 'module_4_assignment'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(module_4_assessment/robot_sensing_debug) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'module_4_assessment/robot_sensing_debug' with type 'ros.ament_cmake' and name 'robot_sensing_debug'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(module_5_assignment) by extension 'ros'
+[0.250s] DEBUG:colcon.colcon_core.package_identification:Package 'module_5_assignment' with type 'ros.ament_cmake' and name 'module_5_assignment'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_6_assignment) by extension 'ros'
+[0.250s] DEBUG:colcon.colcon_core.package_identification:Package 'module_6_assignment' with type 'ros.ament_cmake' and name 'module_6_assignment'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_7_assignment) by extension 'ros'
+[0.251s] DEBUG:colcon.colcon_core.package_identification:Package 'module_7_assignment' with type 'ros.ament_cmake' and name 'module_7_assignment'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extension 'ignore'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extension 'ignore_ament_install'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extensions ['colcon_pkg']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extension 'colcon_pkg'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extensions ['colcon_meta']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extension 'colcon_meta'
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extensions ['ros']
+[0.251s] Level 1:colcon.colcon_core.package_identification:_identify(module_8_assignment) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'module_8_assignment' with type 'ros.ament_cmake' and name 'module_8_assignment'
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.252s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.274s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.275s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/maikelborys/assignment_ws/src/robotics_software_engineer/install
+[0.275s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/maikelborys/robotisim_ws/install
+[0.276s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 330 installed packages in /opt/ros/humble
+[0.278s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'cmake_target' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_1_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.310s] DEBUG:colcon.colcon_core.verb:Building package 'module_1_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_1_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'cmake_target' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.310s] Level 5:colcon.colcon_core.verb:set package 'module_2_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.310s] DEBUG:colcon.colcon_core.verb:Building package 'module_2_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_2_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_3_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.311s] DEBUG:colcon.colcon_core.verb:Building package 'module_3_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_3_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'cmake_target' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_4_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.311s] DEBUG:colcon.colcon_core.verb:Building package 'module_4_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/module_4_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.311s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_5_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'module_5_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_6_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'module_6_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'module_7_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'module_7_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'module_8_assignment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'module_8_assignment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment', 'symlink_install': False, 'test_result_base': None}
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'cmake_target' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'cmake_clean_cache' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'robot_sensing_debug' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'robot_sensing_debug' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug', 'merge_install': False, 'path': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/robot_sensing_debug', 'symlink_install': False, 'test_result_base': None}
+[0.313s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.314s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.315s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_1_assignment' with build type 'ament_cmake'
+[0.315s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_1_assignment'
+[0.316s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.317s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.317s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.320s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_2_assignment' with build type 'ament_cmake'
+[0.320s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_2_assignment'
+[0.320s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.320s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.323s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_3_assignment' with build type 'ament_cmake'
+[0.323s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_3_assignment'
+[0.323s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.323s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.326s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/module_4_assignment' with build type 'ament_cmake'
+[0.326s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/module_4_assignment'
+[0.326s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.326s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.329s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment' with build type 'ament_cmake'
+[0.329s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.331s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment' with build type 'ament_cmake'
+[0.332s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment'
+[0.332s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.334s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment' with build type 'ament_cmake'
+[0.334s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment'
+[0.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.335s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.337s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment' with build type 'ament_cmake'
+[0.337s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment'
+[0.337s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.337s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.340s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/robot_sensing_debug' with build type 'ament_cmake'
+[0.340s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/robot_sensing_debug'
+[0.340s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.340s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_1_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment
+[0.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment -- -j16 -l16
+[0.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_3_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment
+[0.353s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/module_4_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment
+[0.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment
+[0.357s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment
+[0.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment
+[0.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment
+[0.368s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/robot_sensing_debug -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug
+[0.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment -- -j16 -l16
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment
+[0.446s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_2_assignment)
+[0.447s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment
+[0.450s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment' for CMake module files
+[0.450s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment' for CMake config files
+[0.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_2_assignment', 'cmake_prefix_path')
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/hook/cmake_prefix_path.ps1'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/hook/cmake_prefix_path.dsv'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/hook/cmake_prefix_path.sh'
+[0.453s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib'
+[0.453s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/bin'
+[0.453s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/pkgconfig/module_2_assignment.pc'
+[0.454s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/python3.10/site-packages'
+[0.454s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/bin'
+[0.454s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.ps1'
+[0.455s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.dsv'
+[0.455s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.sh'
+[0.456s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.bash'
+[0.457s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.zsh'
+[0.458s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/colcon-core/packages/module_2_assignment)
+[0.459s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_2_assignment)
+[0.459s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment' for CMake module files
+[0.460s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment' for CMake config files
+[0.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_2_assignment', 'cmake_prefix_path')
+[0.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/hook/cmake_prefix_path.ps1'
+[0.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/hook/cmake_prefix_path.dsv'
+[0.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/hook/cmake_prefix_path.sh'
+[0.462s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib'
+[0.462s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/bin'
+[0.462s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/pkgconfig/module_2_assignment.pc'
+[0.462s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/python3.10/site-packages'
+[0.462s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/bin'
+[0.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.ps1'
+[0.463s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.dsv'
+[0.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.sh'
+[0.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.bash'
+[0.465s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/package.zsh'
+[0.465s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/colcon-core/packages/module_2_assignment)
+[1.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/module_4_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment
+[1.015s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16
+[1.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment
+[1.023s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16
+[1.024s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment
+[1.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
+[1.026s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_3_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment
+[1.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment -- -j16 -l16
+[1.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment
+[1.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[1.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment
+[1.032s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment -- -j16 -l16
+[1.052s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16
+[1.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment
+[1.064s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16
+[1.065s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment
+[1.066s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment -- -j16 -l16
+[1.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment
+[1.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
+[1.070s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment
+[1.071s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_4_assignment)
+[1.071s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment' for CMake module files
+[1.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment
+[1.072s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment' for CMake config files
+[1.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_4_assignment', 'cmake_prefix_path')
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/hook/cmake_prefix_path.ps1'
+[1.073s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/hook/cmake_prefix_path.dsv'
+[1.074s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/hook/cmake_prefix_path.sh'
+[1.076s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/bin'
+[1.076s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/lib/pkgconfig/module_4_assignment.pc'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/lib/python3.10/site-packages'
+[1.077s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/bin'
+[1.077s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.ps1'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.dsv'
+[1.079s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.sh'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.bash'
+[1.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.zsh'
+[1.080s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/colcon-core/packages/module_4_assignment)
+[1.081s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_4_assignment)
+[1.081s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment' for CMake module files
+[1.081s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment' for CMake config files
+[1.082s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_4_assignment', 'cmake_prefix_path')
+[1.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/hook/cmake_prefix_path.ps1'
+[1.082s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/hook/cmake_prefix_path.dsv'
+[1.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/hook/cmake_prefix_path.sh'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/bin'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/lib/pkgconfig/module_4_assignment.pc'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/lib/python3.10/site-packages'
+[1.083s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/bin'
+[1.083s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.ps1'
+[1.084s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.dsv'
+[1.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.sh'
+[1.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.bash'
+[1.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.zsh'
+[1.085s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/colcon-core/packages/module_4_assignment)
+[1.086s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[1.087s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment
+[1.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment -- -j16 -l16
+[1.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment
+[1.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_1_assignment -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment
+[1.090s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment -- -j16 -l16
+[1.091s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_6_assignment)
+[1.091s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment' for CMake module files
+[1.092s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment
+[1.092s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment' for CMake config files
+[1.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_6_assignment', 'cmake_prefix_path')
+[1.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/hook/cmake_prefix_path.ps1'
+[1.093s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/hook/cmake_prefix_path.dsv'
+[1.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/hook/cmake_prefix_path.sh'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/bin'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/pkgconfig/module_6_assignment.pc'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/python3.10/site-packages'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/bin'
+[1.096s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.ps1'
+[1.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.dsv'
+[1.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.sh'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.bash'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.zsh'
+[1.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/colcon-core/packages/module_6_assignment)
+[1.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_6_assignment)
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment' for CMake module files
+[1.100s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment' for CMake config files
+[1.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_6_assignment', 'cmake_prefix_path')
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/hook/cmake_prefix_path.ps1'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/hook/cmake_prefix_path.dsv'
+[1.101s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/hook/cmake_prefix_path.sh'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/bin'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/pkgconfig/module_6_assignment.pc'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/python3.10/site-packages'
+[1.102s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/bin'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.ps1'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.dsv'
+[1.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.sh'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.bash'
+[1.104s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.zsh'
+[1.104s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/colcon-core/packages/module_6_assignment)
+[1.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_3_assignment)
+[1.105s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment' for CMake module files
+[1.106s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_3_assignment
+[1.106s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment' for CMake config files
+[1.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_3_assignment', 'cmake_prefix_path')
+[1.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/hook/cmake_prefix_path.ps1'
+[1.106s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/hook/cmake_prefix_path.dsv'
+[1.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/hook/cmake_prefix_path.sh'
+[1.107s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/bin'
+[1.107s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/lib/pkgconfig/module_3_assignment.pc'
+[1.107s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/lib/python3.10/site-packages'
+[1.108s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/bin'
+[1.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.ps1'
+[1.108s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.dsv'
+[1.108s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.sh'
+[1.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.bash'
+[1.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.zsh'
+[1.109s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/colcon-core/packages/module_3_assignment)
+[1.110s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_3_assignment)
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment' for CMake module files
+[1.110s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment' for CMake config files
+[1.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_3_assignment', 'cmake_prefix_path')
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/hook/cmake_prefix_path.ps1'
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/hook/cmake_prefix_path.dsv'
+[1.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/hook/cmake_prefix_path.sh'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/bin'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/lib/pkgconfig/module_3_assignment.pc'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/lib/python3.10/site-packages'
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/bin'
+[1.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.ps1'
+[1.113s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.dsv'
+[1.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.sh'
+[1.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.bash'
+[1.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.zsh'
+[1.114s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/colcon-core/packages/module_3_assignment)
+[1.115s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_5_assignment)
+[1.115s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment' for CMake module files
+[1.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment' for CMake config files
+[1.116s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_5_assignment', 'cmake_prefix_path')
+[1.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/hook/cmake_prefix_path.ps1'
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/hook/cmake_prefix_path.dsv'
+[1.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/hook/cmake_prefix_path.sh'
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/bin'
+[1.117s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/pkgconfig/module_5_assignment.pc'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/python3.10/site-packages'
+[1.118s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/bin'
+[1.118s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.ps1'
+[1.118s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.dsv'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.sh'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.bash'
+[1.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.zsh'
+[1.119s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/colcon-core/packages/module_5_assignment)
+[1.120s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_5_assignment)
+[1.120s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment' for CMake module files
+[1.121s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment' for CMake config files
+[1.121s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_5_assignment', 'cmake_prefix_path')
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/hook/cmake_prefix_path.ps1'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/hook/cmake_prefix_path.dsv'
+[1.121s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/hook/cmake_prefix_path.sh'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/bin'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/pkgconfig/module_5_assignment.pc'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/python3.10/site-packages'
+[1.122s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/bin'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.ps1'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.dsv'
+[1.123s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.sh'
+[1.124s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.bash'
+[1.125s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.zsh'
+[1.125s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/colcon-core/packages/module_5_assignment)
+[1.126s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_8_assignment)
+[1.126s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment' for CMake module files
+[1.127s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment
+[1.127s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment' for CMake config files
+[1.127s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_8_assignment', 'cmake_prefix_path')
+[1.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/hook/cmake_prefix_path.ps1'
+[1.127s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/hook/cmake_prefix_path.dsv'
+[1.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/hook/cmake_prefix_path.sh'
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/bin'
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/pkgconfig/module_8_assignment.pc'
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/python3.10/site-packages'
+[1.129s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/bin'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.ps1'
+[1.129s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.dsv'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.sh'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.bash'
+[1.130s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.zsh'
+[1.131s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/colcon-core/packages/module_8_assignment)
+[1.131s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_8_assignment)
+[1.131s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment' for CMake module files
+[1.132s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment' for CMake config files
+[1.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_8_assignment', 'cmake_prefix_path')
+[1.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/hook/cmake_prefix_path.ps1'
+[1.133s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/hook/cmake_prefix_path.dsv'
+[1.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/hook/cmake_prefix_path.sh'
+[1.133s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/bin'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/pkgconfig/module_8_assignment.pc'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/python3.10/site-packages'
+[1.134s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/bin'
+[1.134s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.ps1'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.dsv'
+[1.135s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.sh'
+[1.136s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.bash'
+[1.137s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.zsh'
+[1.137s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/colcon-core/packages/module_8_assignment)
+[1.137s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_7_assignment)
+[1.138s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment' for CMake module files
+[1.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment
+[1.139s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment' for CMake config files
+[1.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_7_assignment', 'cmake_prefix_path')
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/hook/cmake_prefix_path.ps1'
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/hook/cmake_prefix_path.dsv'
+[1.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/hook/cmake_prefix_path.sh'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/bin'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/pkgconfig/module_7_assignment.pc'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/python3.10/site-packages'
+[1.140s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/bin'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.ps1'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.dsv'
+[1.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.sh'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.bash'
+[1.142s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.zsh'
+[1.142s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/colcon-core/packages/module_7_assignment)
+[1.143s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_7_assignment)
+[1.143s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment' for CMake module files
+[1.144s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment' for CMake config files
+[1.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_7_assignment', 'cmake_prefix_path')
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/hook/cmake_prefix_path.ps1'
+[1.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/hook/cmake_prefix_path.dsv'
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/hook/cmake_prefix_path.sh'
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/bin'
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/pkgconfig/module_7_assignment.pc'
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/python3.10/site-packages'
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/bin'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.ps1'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.dsv'
+[1.146s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.sh'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.bash'
+[1.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.zsh'
+[1.148s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/colcon-core/packages/module_7_assignment)
+[1.452s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment -- -j16 -l16
+[1.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment
+[1.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_1_assignment)
+[1.464s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment' for CMake module files
+[1.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_1_assignment
+[1.465s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment' for CMake config files
+[1.465s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_1_assignment', 'cmake_prefix_path')
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/hook/cmake_prefix_path.ps1'
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/hook/cmake_prefix_path.dsv'
+[1.466s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/hook/cmake_prefix_path.sh'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/bin'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/lib/pkgconfig/module_1_assignment.pc'
+[1.466s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/lib/python3.10/site-packages'
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/bin'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.ps1'
+[1.467s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.dsv'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.sh'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.bash'
+[1.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.zsh'
+[1.468s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/colcon-core/packages/module_1_assignment)
+[1.469s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(module_1_assignment)
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment' for CMake module files
+[1.470s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment' for CMake config files
+[1.470s] Level 1:colcon.colcon_core.shell:create_environment_hook('module_1_assignment', 'cmake_prefix_path')
+[1.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/hook/cmake_prefix_path.ps1'
+[1.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/hook/cmake_prefix_path.dsv'
+[1.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/hook/cmake_prefix_path.sh'
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/bin'
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/lib/pkgconfig/module_1_assignment.pc'
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/lib/python3.10/site-packages'
+[1.471s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/bin'
+[1.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.ps1'
+[1.472s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.dsv'
+[1.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.sh'
+[1.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.bash'
+[1.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/module_1_assignment/package.zsh'
+[1.474s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment/share/colcon-core/packages/module_1_assignment)
+[1.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assessment/robot_sensing_debug -DCMAKE_INSTALL_PREFIX=/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug
+[1.564s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug -- -j16 -l16
+[9.214s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug -- -j16 -l16
+[9.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug
+[9.234s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_sensing_debug)
+[9.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug
+[9.235s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug' for CMake module files
+[9.236s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug' for CMake config files
+[9.237s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_sensing_debug', 'cmake_prefix_path')
+[9.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/hook/cmake_prefix_path.ps1'
+[9.238s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/hook/cmake_prefix_path.dsv'
+[9.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/hook/cmake_prefix_path.sh'
+[9.239s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib'
+[9.239s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/bin'
+[9.239s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib/pkgconfig/robot_sensing_debug.pc'
+[9.240s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib/python3.10/site-packages'
+[9.240s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/bin'
+[9.241s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.ps1'
+[9.241s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.dsv'
+[9.242s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.sh'
+[9.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.bash'
+[9.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.zsh'
+[9.244s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/colcon-core/packages/robot_sensing_debug)
+[9.245s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_sensing_debug)
+[9.245s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug' for CMake module files
+[9.246s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug' for CMake config files
+[9.247s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_sensing_debug', 'cmake_prefix_path')
+[9.247s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/hook/cmake_prefix_path.ps1'
+[9.248s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/hook/cmake_prefix_path.dsv'
+[9.248s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/hook/cmake_prefix_path.sh'
+[9.249s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib'
+[9.249s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/bin'
+[9.249s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib/pkgconfig/robot_sensing_debug.pc'
+[9.250s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib/python3.10/site-packages'
+[9.250s] Level 1:colcon.colcon_core.environment:checking '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/bin'
+[9.250s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.ps1'
+[9.251s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.dsv'
+[9.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.sh'
+[9.252s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.bash'
+[9.253s] INFO:colcon.colcon_core.shell:Creating package script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.zsh'
+[9.253s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/colcon-core/packages/robot_sensing_debug)
+[9.254s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[9.254s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[9.254s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[9.254s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[9.262s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[9.262s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[9.262s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.278s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.279s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/local_setup.ps1'
+[9.280s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/_local_setup_util_ps1.py'
+[9.282s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/setup.ps1'
+[9.283s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/local_setup.sh'
+[9.284s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/_local_setup_util_sh.py'
+[9.285s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/setup.sh'
+[9.286s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/local_setup.bash'
+[9.287s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/setup.bash'
+[9.289s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/local_setup.zsh'
+[9.289s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/setup.zsh'

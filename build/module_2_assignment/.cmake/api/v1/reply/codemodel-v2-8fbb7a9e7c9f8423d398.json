@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-9ca27945f4d1e5ecf322.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "module_2_assignment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "back_forth::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-back_forth-3129df6484b87cc7fc95.json",
+					"name" : "back_forth",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "circle_drive::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-circle_drive-2c6fbe07ef13cad3a942.json",
+					"name" : "circle_drive",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "led_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-led_publisher-499ea8214a8af24cc02e.json",
+					"name" : "led_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "led_subscriber::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-led_subscriber-2004a85ff7316305b1d4.json",
+					"name" : "led_subscriber",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_2_assignment_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_2_assignment_uninstall-107a0cf6cb908b707f6e.json",
+					"name" : "module_2_assignment_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "spiral_drive::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-spiral_drive-9cbfa128c5d27cb662a6.json",
+					"name" : "spiral_drive",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-c0a7cf7a7842ff7dc49f.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_2_assignment",
+		"source" : "/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_2_assignment"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
