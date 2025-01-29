@@ -11,6 +11,31 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(tf2_ros REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+
+add_executable(robotic_arm_tf_broadcaster src/robotic_arm_tf_broadcaster.cpp)
+ament_target_dependencies(robotic_arm_tf_broadcaster rclcpp tf2_ros geometry_msgs)
+
+add_executable(ackermann_tf_broadcaster src/ackermann_tf_broadcaster.cpp)
+ament_target_dependencies(ackermann_tf_broadcaster rclcpp tf2_ros geometry_msgs)
+
+# Ejecutable del broadcaster TF2
+add_executable(wheeled_robot_tf_broadcaster src/wheeled_robot_tf_broadcaster.cpp)
+ament_target_dependencies(wheeled_robot_tf_broadcaster rclcpp tf2_ros geometry_msgs)
+
+install(TARGETS
+  robotic_arm_tf_broadcaster ackermann_tf_broadcaster wheeled_robot_tf_broadcaster
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
+install(DIRECTORY launch urdf
+  DESTINATION share/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/robot_simulation.dir/src/main.cpp.o CMakeFiles/robot_simulation.dir/src/Actuator.cpp.o CMakeFiles/robot_simulation.dir/src/Robot.cpp.o -o robot_simulation 
