@@ -1,0 +1,7 @@
+/usr/bin/ld: CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o: in function `CameraSubscriber::cameraCallback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+maze_solving_with_lidar.cpp:(.text._ZN16CameraSubscriber14cameraCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN16CameraSubscriber14cameraCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x70b): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+/usr/bin/ld: maze_solving_with_lidar.cpp:(.text._ZN16CameraSubscriber14cameraCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN16CameraSubscriber14cameraCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x742): undefined reference to `cv::waitKey(int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/mazeSolving.dir/build.make:179: mazeSolving] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mazeSolving.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

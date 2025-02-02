@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/lineFollowing.dir/src/line_following_with_camera.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable lineFollowing[0m
+[ 75%] Built target lineFollowing

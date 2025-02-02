@@ -1,0 +1,15 @@
+[0.010s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16
+[0.056s] [35m[1mConsolidate compiler generated dependencies of target mazeSolving[0m
+[0.067s] [ 50%] Built target lineFollowing
+[0.073s] [ 75%] [32mBuilding CXX object CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o[0m
+[1.813s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:[m[K In member function ‘[01m[Kvoid MazeSolving::lidarCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.813s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:57:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand[m[K’ was not declared in this scope
+[1.813s]    57 |         [01;31m[Kcommand[m[K.linear.x = _linearVel;
+[1.813s]       |         [01;31m[K^~~~~~~[m[K
+[1.816s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:60:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand[m[K’ was not declared in this scope
+[1.816s]    60 |         [01;31m[Kcommand[m[K.linear.x = _linearVel;
+[1.816s]       |         [01;31m[K^~~~~~~[m[K
+[3.661s] gmake[2]: *** [CMakeFiles/mazeSolving.dir/build.make:76: CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o] Error 1
+[3.661s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mazeSolving.dir/all] Error 2
+[3.662s] gmake: *** [Makefile:146: all] Error 2
+[3.666s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16

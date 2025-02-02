@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target mazeSolving[0m
+[ 50%] Built target lineFollowing
+[ 75%] [32mBuilding CXX object CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o[0m

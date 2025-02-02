@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000366] (-) JobUnselected: {'identifier': 'module_1_assignment'}
+[0.000391] (-) JobUnselected: {'identifier': 'module_2_assignment'}
+[0.000406] (-) JobUnselected: {'identifier': 'module_3_assignment'}
+[0.000419] (-) JobUnselected: {'identifier': 'module_4_assignment'}
+[0.000432] (-) JobUnselected: {'identifier': 'module_5_assignment'}
+[0.000445] (-) JobUnselected: {'identifier': 'module_6_assignment'}
+[0.000457] (-) JobUnselected: {'identifier': 'module_7_assignment'}
+[0.000469] (-) JobUnselected: {'identifier': 'module_8_assignment'}
+[0.000634] (-) EventReactorShutdown: {}

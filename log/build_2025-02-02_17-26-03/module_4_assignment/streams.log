@@ -1,0 +1,34 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16
+[0.049s] [35m[1mConsolidate compiler generated dependencies of target mazeSolving[0m
+[0.063s] [ 50%] Built target lineFollowing
+[0.067s] [ 75%] [32mBuilding CXX object CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o[0m
+[8.349s] [100%] [32m[1mLinking CXX executable mazeSolving[0m
+[8.847s] [100%] Built target mazeSolving
+[8.858s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16
+[8.868s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment
+[8.874s] -- Install configuration: ""
+[8.874s] -- Execute custom install script
+[8.875s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/lib/module_4_assignment/mazeSolving
+[8.875s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/lib/module_4_assignment/lineFollowing
+[8.875s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment//launch/camera_line_following.launch.py
+[8.875s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment//launch/custom_sensors.launch.py
+[8.875s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment//launch/lidar_maze_solving.launch.py
+[8.876s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment//worlds/line_following.world
+[8.876s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment//worlds/maze.world
+[8.876s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment//urdf/diff_drive.urdf
+[8.876s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/ament_index/resource_index/package_run_dependencies/module_4_assignment
+[8.876s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/ament_index/resource_index/parent_prefix_path/module_4_assignment
+[8.876s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/environment/ament_prefix_path.sh
+[8.877s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/environment/ament_prefix_path.dsv
+[8.877s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/environment/path.sh
+[8.877s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/environment/path.dsv
+[8.877s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/local_setup.bash
+[8.877s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/local_setup.sh
+[8.877s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/local_setup.zsh
+[8.877s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/local_setup.dsv
+[8.877s] -- Symlinking: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.dsv
+[8.887s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/ament_index/resource_index/packages/module_4_assignment
+[8.887s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/cmake/module_4_assignmentConfig.cmake
+[8.887s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/cmake/module_4_assignmentConfig-version.cmake
+[8.887s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment/share/module_4_assignment/package.xml
+[8.889s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment

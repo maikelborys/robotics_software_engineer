@@ -1,0 +1,136 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16
+[0.060s] [ 25%] [32mBuilding CXX object CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o[0m
+[0.064s] [ 75%] Built target lineFollowing
+[1.741s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:148:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.741s]   148 | }
+[1.741s]       |  [01;31m[K^[m[K
+[1.741s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:18:41:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.741s]    18 | class MazeSolving : public rclcpp::Node [01;36m[K{[m[K
+[1.742s]       |                                         [01;36m[K^[m[K
+[1.742s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:[m[K In constructor ‘[01m[KMazeSolving::MazeSolving()[m[K’:
+[1.742s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:20:41:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMazeSolving[m[K’ does not have any field named ‘[01m[K_state[m[K’
+[1.742s]    20 |   MazeSolving() : Node("maze_solving"), [01;31m[K_state[m[K(RobotState::MOVING_STRAIGHT) {
+[1.742s]       |                                         [01;31m[K^~~~~~[m[K
+[1.755s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:21:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[1.755s]    21 |     [01;31m[K_publisher[m[K =
+[1.756s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.756s]       |     [32m[Krmw_publisher_t[m[K
+[1.765s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:23:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_subscription[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_subscription_t[m[K’?
+[1.765s]    23 |     [01;31m[K_subscription[m[K = this->create_subscription<sensor_msgs::msg::LaserScan>(
+[1.765s]       |     [01;31m[K^~~~~~~~~~~~~[m[K
+[1.765s]       |     [32m[Krmw_subscription_t[m[K
+[1.801s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:[m[K In member function ‘[01m[Kvoid MazeSolving::lidarCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[1.801s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:47:13:[m[K [01;31m[Kerror: [m[K‘[01m[K_state[m[K’ was not declared in this scope; did you mean ‘[01m[K_xstate[m[K’?
+[1.801s]    47 |     switch ([01;31m[K_state[m[K)
+[1.802s]       |             [01;31m[K^~~~~~[m[K
+[1.802s]       |             [32m[K_xstate[m[K
+[1.809s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:50:26:[m[K [01;31m[Kerror: [m[K‘[01m[K_frontThreshold[m[K’ was not declared in this scope
+[1.809s]    50 |       if(frontObstacle < [01;31m[K_frontThreshold[m[K){
+[1.809s]       |                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.813s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:51:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft0bstacle[m[K’ was not declared in this scope; did you mean ‘[01m[KleftObstacle[m[K’?
+[1.813s]    51 |         if([01;31m[Kleft0bstacle[m[K < rightObstacle){
+[1.813s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[1.813s]       |            [32m[KleftObstacle[m[K
+[1.813s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:52:20:[m[K [01;31m[Kerror: [m[K‘[01m[KTURNING_RIGHT[m[K’ was not declared in this scope; did you mean ‘[01m[KRobotState::TURNING_RIGHT[m[K’?
+[1.813s]    52 |           _state = [01;31m[KTURNING_RIGHT[m[K;{
+[1.813s]       |                    [01;31m[K^~~~~~~~~~~~~[m[K
+[1.813s]       |                    [32m[KRobotState::TURNING_RIGHT[m[K
+[1.813s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:14:3:[m[K [01;36m[Knote: [m[K‘[01m[KRobotState::TURNING_RIGHT[m[K’ declared here
+[1.813s]    14 |   [01;36m[KTURNING_RIGHT[m[K,
+[1.814s]       |   [01;36m[K^~~~~~~~~~~~~[m[K
+[1.814s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:53:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[Kelse[m[K’
+[1.814s]    53 |         } [01;31m[Kelse[m[K {
+[1.814s]       |           [01;31m[K^~~~[m[K
+[1.814s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:51:41:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.814s]    51 |         if(left0bstacle < rightObstacle)[01;36m[K{[m[K
+[1.814s]       |                                         [01;36m[K^[m[K
+[1.817s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:54:20:[m[K [01;31m[Kerror: [m[K‘[01m[KTURNUNG_LEFT[m[K’ was not declared in this scope
+[1.817s]    54 |           _state = [01;31m[KTURNUNG_LEFT[m[K;
+[1.817s]       |                    [01;31m[K^~~~~~~~~~~~[m[K
+[1.825s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:60:26:[m[K [01;31m[Kerror: [m[K‘[01m[K_frontThreshold[m[K’ was not declared in this scope
+[1.825s]    60 |       if(frontObstacle < [01;31m[K_frontThreshold[m[K){
+[1.825s]       |                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.829s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:61:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft0bstacle[m[K’ was not declared in this scope; did you mean ‘[01m[KleftObstacle[m[K’?
+[1.829s]    61 |         if([01;31m[Kleft0bstacle[m[K < rightObstacle){
+[1.829s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[1.829s]       |            [32m[KleftObstacle[m[K
+[1.829s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:62:20:[m[K [01;31m[Kerror: [m[K‘[01m[KMOVING_STRAIGHT[m[K’ was not declared in this scope; did you mean ‘[01m[KRobotState::MOVING_STRAIGHT[m[K’?
+[1.829s]    62 |           _state = [01;31m[KMOVING_STRAIGHT[m[K;
+[1.829s]       |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.829s]       |                    [32m[KRobotState::MOVING_STRAIGHT[m[K
+[1.829s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:12:3:[m[K [01;36m[Knote: [m[K‘[01m[KRobotState::MOVING_STRAIGHT[m[K’ declared here
+[1.829s]    12 |   [01;36m[KMOVING_STRAIGHT[m[K,
+[1.829s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[1.832s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:68:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kleft0bstacle[m[K’ was not declared in this scope; did you mean ‘[01m[KleftObstacle[m[K’?
+[1.832s]    68 |         if([01;31m[Kleft0bstacle[m[K < rightObstacle){
+[1.832s]       |            [01;31m[K^~~~~~~~~~~~[m[K
+[1.832s]       |            [32m[KleftObstacle[m[K
+[1.832s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:69:20:[m[K [01;31m[Kerror: [m[K‘[01m[KMOVING_STRAIGHT[m[K’ was not declared in this scope; did you mean ‘[01m[KRobotState::MOVING_STRAIGHT[m[K’?
+[1.832s]    69 |           _state = [01;31m[KMOVING_STRAIGHT[m[K;
+[1.833s]       |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.833s]       |                    [32m[KRobotState::MOVING_STRAIGHT[m[K
+[1.833s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:12:3:[m[K [01;36m[Knote: [m[K‘[01m[KRobotState::MOVING_STRAIGHT[m[K’ declared here
+[1.833s]    12 |   [01;36m[KMOVING_STRAIGHT[m[K,
+[1.833s]       |   [01;36m[K^~~~~~~~~~~~~~~[m[K
+[1.835s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:74:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand[m[K’ was not declared in this scope
+[1.835s]    74 |       [01;31m[Kcommand[m[K.linear.x = 0.0;
+[1.835s]       |       [01;31m[K^~~~~~~[m[K
+[1.839s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:76:7:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+[1.839s]    76 |       [01;31m[KRCLPP_INFO[m[K(this->get_logger(), "Robot is out of the maze");
+[1.839s]       |       [01;31m[K^~~~~~~~~~[m[K
+[1.839s]       |       [32m[KRCLCPP_INFO[m[K
+[1.842s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:109:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand[m[K’ was not declared in this scope
+[1.843s]   109 |       [01;31m[Kcommand[m[K.linear.x = _linearVel;
+[1.843s]       |       [01;31m[K^~~~~~~[m[K
+[1.848s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:109:26:[m[K [01;31m[Kerror: [m[K‘[01m[K_linearVel[m[K’ was not declared in this scope
+[1.848s]   109 |       command.linear.x = [01;31m[K_linearVel[m[K;
+[1.848s]       |                          [01;31m[K^~~~~~~~~~[m[K
+[1.852s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:111:7:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLPP_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+[1.852s]   111 |       [01;31m[KRCLPP_INFO[m[K(this->get_logger(), "Moving straight");
+[1.852s]       |       [01;31m[K^~~~~~~~~~[m[K
+[1.852s]       |       [32m[KRCLCPP_INFO[m[K
+[1.858s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:115:27:[m[K [01;31m[Kerror: [m[K‘[01m[K_angularVel[m[K’ was not declared in this scope
+[1.858s]   115 |       command.angular.z = [01;31m[K_angularVel[m[K;
+[1.858s]       |                           [01;31m[K^~~~~~~~~~~[m[K
+[1.863s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:131:5:[m[K [01;31m[Kerror: [m[K‘[01m[K_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_publisher_t[m[K’?
+[1.863s]   131 |     [01;31m[K_publisher[m[K->publish(command);
+[1.863s]       |     [01;31m[K^~~~~~~~~~[m[K
+[1.863s]       |     [32m[Krmw_publisher_t[m[K
+[1.866s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:131:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand[m[K’ was not declared in this scope
+[1.866s]   131 |     _publisher->publish([01;31m[Kcommand[m[K);
+[1.866s]       |                         [01;31m[K^~~~~~~[m[K
+[1.867s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:138:14:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[KRobotState _state[m[K’
+[1.867s]   138 |   RobotState [01;31m[K_state[m[K;
+[1.867s]       |              [01;31m[K^~~~~~[m[K
+[1.867s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:47:13:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>_state[m[K’ previously declared here
+[1.867s]    47 |     switch ([01;36m[K_state[m[K)
+[1.867s]       |             [01;36m[K^~~~~~[m[K
+[1.873s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:134:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[K_frontThreshold[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.873s]   134 |   float [01;35m[K_frontThreshold[m[K = 1.5f;
+[1.873s]       |         [01;35m[K^~~~~~~~~~~~~~~[m[K
+[1.873s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:135:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[K_angularVel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.873s]   135 |   float [01;35m[K_angularVel[m[K = 0.8f;
+[1.873s]       |         [01;35m[K^~~~~~~~~~~[m[K
+[1.873s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:136:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[K_linearVel[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.873s]   136 |   float [01;35m[K_linearVel[m[K = 0.6f;
+[1.873s]       |         [01;35m[K^~~~~~~~~~[m[K
+[1.873s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:138:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[K_state[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[1.874s]   138 |   RobotState [01;35m[K_state[m[K;
+[1.874s]       |              [01;35m[K^~~~~~[m[K
+[1.874s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:143:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[1.874s]   143 | int main(int argc, char **argv) [01;31m[K{[m[K
+[1.874s]       |                                 [01;31m[K^[m[K
+[1.874s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:148:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[1.874s]   148 | }
+[1.874s]       |  [01;31m[K^[m[K
+[1.874s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:29:77:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[1.874s]    29 |   void lidarCallback(const sensor_msgs::msg::LaserScan::SharedPtr lidarMsg) [01;36m[K{[m[K
+[1.874s]       |                                                                             [01;36m[K^[m[K
+[1.874s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:[m[K At global scope:
+[1.875s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_4_assignment/src/maze_solving_with_lidar.cpp:148:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[1.875s]   148 | }
+[1.875s]       |  [01;31m[K^[m[K
+[3.497s] gmake[2]: *** [CMakeFiles/mazeSolving.dir/build.make:76: CMakeFiles/mazeSolving.dir/src/maze_solving_with_lidar.cpp.o] Error 1
+[3.498s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/mazeSolving.dir/all] Error 2
+[3.498s] gmake: *** [Makefile:146: all] Error 2
+[3.501s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_4_assignment -- -j16 -l16
