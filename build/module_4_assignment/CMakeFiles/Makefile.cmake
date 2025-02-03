@@ -712,7 +712,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_core/module_4_assignmentConfig.cmake"
   "ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp"
   "ament_cmake_core/module_4_assignmentConfig-version.cmake"
-  "ament_cmake_symlink_install_targets_0_.cmake"
+  "ament_cmake_symlink_install_targets_0_Debug.cmake"
   "ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/module_4_assignment"
   "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/module_4_assignment"
   "ament_cmake_index/share/ament_index/resource_index/packages/module_4_assignment"

@@ -21,7 +21,7 @@ ament_target_dependencies(mazeSolving rclcpp sensor_msgs geometry_msgs cv_bridge
 target_link_libraries(mazeSolving ${OpenCV_LIBS})  # Add this line to link OpenCV libraries
 
 add_executable(lineFollowing src/line_following_with_camera.cpp)
-ament_target_dependencies(lineFollowing rclcpp sensor_msgs cv_bridge geometry_msgs)
+ament_target_dependencies(lineFollowing rclcpp sensor_msgs cv_bridge geometry_msgs urdf)
 target_link_libraries(lineFollowing ${OpenCV_LIBS})
 
 

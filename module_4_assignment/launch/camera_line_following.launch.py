@@ -30,11 +30,11 @@ def generate_launch_description():
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros')
 
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
-    x_pose = LaunchConfiguration('x_pose', default='-9.09')
-    y_pose = LaunchConfiguration('y_pose', default='2.07')
+    x_pose = LaunchConfiguration('x_pose', default='-5,988429')
+    y_pose = LaunchConfiguration('y_pose', default='2,031322')
 
     world = os.path.join(
-        get_package_share_directory('robot_sensing'),
+        get_package_share_directory('module_4_assignment'),
         'worlds',
         'line_following.world'
     )
@@ -66,10 +66,10 @@ def generate_launch_description():
     )
 
     line_following = Node(
-        package = 'robot_sensing',
-        name = 'line_following',
-        executable ='lineFollowing',
-
+        package='module_4_assignment',
+        name='line_following',
+        executable='lineFollowing',
+        output='screen'
     )
 
     ld = LaunchDescription()
