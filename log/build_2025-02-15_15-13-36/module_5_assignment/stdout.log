@@ -1,0 +1,3 @@
+[ 16%] [32mBuilding CXX object CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.o[0m
+[ 50%] Built target goal_planer
+[ 83%] Built target lineFollowing

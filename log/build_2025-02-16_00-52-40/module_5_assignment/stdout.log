@@ -1,0 +1,7 @@
+[ 10%] [32mBuilding CXX object CMakeFiles/lqr_lib.dir/src/lqr_lib.cpp.o[0m
+[ 50%] Built target goal_planer
+[ 60%] Built target lineFollowing
+[ 70%] Built target robotic_arm_tf_broadcaster
+[ 80%] [32m[1mLinking CXX static library liblqr_lib.a[0m
+[ 80%] Built target lqr_lib
+[ 90%] [32mBuilding CXX object CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o[0m

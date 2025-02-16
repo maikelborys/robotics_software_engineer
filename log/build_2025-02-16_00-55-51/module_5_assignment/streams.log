@@ -1,0 +1,45 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
+[0.052s] [35m[1mConsolidate compiler generated dependencies of target lqr_lib[0m
+[0.065s] [ 20%] Built target robotic_arm_tf_broadcaster
+[0.066s] [ 70%] Built target goal_planer
+[0.066s] [ 70%] Built target lineFollowing
+[0.067s] [ 80%] Built target lqr_lib
+[0.092s] [ 90%] [32mBuilding CXX object CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o[0m
+[2.396s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment/src/lqr_node.cpp:[m[K In member function ‘[01m[Kvoid LqrNode::controlLoopCallback()[m[K’:
+[2.396s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment/src/lqr_node.cpp:123:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<State>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+[2.396s]   123 |     if ([01;35m[Kcurrent_waypoint >= waypoints_.size()[m[K) {
+[2.396s]       |         [01;35m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~[m[K
+[13.161s] [100%] [32m[1mLinking CXX executable lqr_node[0m
+[13.884s] [100%] Built target lqr_node
+[13.894s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
+[13.903s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment
+[13.911s] -- Install configuration: ""
+[13.911s] -- Execute custom install script
+[13.912s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/module_5_assignment/lineFollowing
+[13.912s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/module_5_assignment/goal_planer
+[13.912s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/module_5_assignment/robotic_arm_tf_broadcaster
+[13.912s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/module_5_assignment/liblqr_lib.a
+[13.913s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/lib/module_5_assignment/lqr_node
+[13.913s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment//launch/camera_line_following.launch.py
+[13.913s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment//launch/goal_planer.launch.py
+[13.913s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment//launch/lqr_multi_goals.launch.py
+[13.913s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment//launch/robot_state_publisher.launch.py
+[13.914s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment//urdf/diff_drive.urdf
+[13.914s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment//urdf/robotic_arm.urdf
+[13.914s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment//config/arm_controller.yaml
+[13.914s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/ament_index/resource_index/package_run_dependencies/module_5_assignment
+[13.914s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/ament_index/resource_index/parent_prefix_path/module_5_assignment
+[13.915s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/environment/ament_prefix_path.sh
+[13.915s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/environment/ament_prefix_path.dsv
+[13.915s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/environment/path.sh
+[13.915s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/environment/path.dsv
+[13.915s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/local_setup.bash
+[13.916s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/local_setup.sh
+[13.916s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/local_setup.zsh
+[13.916s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/local_setup.dsv
+[13.916s] -- Symlinking: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.dsv
+[13.925s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/ament_index/resource_index/packages/module_5_assignment
+[13.925s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/cmake/module_5_assignmentConfig.cmake
+[13.925s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/cmake/module_5_assignmentConfig-version.cmake
+[13.925s] -- Up-to-date symlink: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment/share/module_5_assignment/package.xml
+[13.928s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment

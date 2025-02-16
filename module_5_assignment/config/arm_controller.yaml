@@ -1,0 +1,26 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    arm_controller:
+      type: effort_controllers/JointGroupEffortController
+      joints:
+        - shoulder_joint
+        - elbow_joint
+        - wrist_joint
+        - finger1_joint
+        - finger2_joint
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+arm_controller:
+  ros__parameters:
+    joints:
+      - shoulder_joint
+      - elbow_joint
+    command_interfaces:
+      - effort
+    state_interfaces:
+      - position
+      - effort

@@ -197,6 +197,191 @@ module_5_assignment_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_5_assignment_uninstall.dir/build.make CMakeFiles/module_5_assignment_uninstall.dir/build
 .PHONY : module_5_assignment_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named lineFollowing
+
+# Build rule for target.
+lineFollowing: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lineFollowing
+.PHONY : lineFollowing
+
+# fast build rule for target.
+lineFollowing/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineFollowing.dir/build.make CMakeFiles/lineFollowing.dir/build
+.PHONY : lineFollowing/fast
+
+#=============================================================================
+# Target rules for targets named goal_planer
+
+# Build rule for target.
+goal_planer: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 goal_planer
+.PHONY : goal_planer
+
+# fast build rule for target.
+goal_planer/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_planer.dir/build.make CMakeFiles/goal_planer.dir/build
+.PHONY : goal_planer/fast
+
+#=============================================================================
+# Target rules for targets named robotic_arm_tf_broadcaster
+
+# Build rule for target.
+robotic_arm_tf_broadcaster: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robotic_arm_tf_broadcaster
+.PHONY : robotic_arm_tf_broadcaster
+
+# fast build rule for target.
+robotic_arm_tf_broadcaster/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robotic_arm_tf_broadcaster.dir/build.make CMakeFiles/robotic_arm_tf_broadcaster.dir/build
+.PHONY : robotic_arm_tf_broadcaster/fast
+
+#=============================================================================
+# Target rules for targets named lqr_lib
+
+# Build rule for target.
+lqr_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lqr_lib
+.PHONY : lqr_lib
+
+# fast build rule for target.
+lqr_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_lib.dir/build.make CMakeFiles/lqr_lib.dir/build
+.PHONY : lqr_lib/fast
+
+#=============================================================================
+# Target rules for targets named lqr_node
+
+# Build rule for target.
+lqr_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lqr_node
+.PHONY : lqr_node
+
+# fast build rule for target.
+lqr_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_node.dir/build.make CMakeFiles/lqr_node.dir/build
+.PHONY : lqr_node/fast
+
+src/goal_planer.o: src/goal_planer.cpp.o
+.PHONY : src/goal_planer.o
+
+# target to build an object file
+src/goal_planer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_planer.dir/build.make CMakeFiles/goal_planer.dir/src/goal_planer.cpp.o
+.PHONY : src/goal_planer.cpp.o
+
+src/goal_planer.i: src/goal_planer.cpp.i
+.PHONY : src/goal_planer.i
+
+# target to preprocess a source file
+src/goal_planer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_planer.dir/build.make CMakeFiles/goal_planer.dir/src/goal_planer.cpp.i
+.PHONY : src/goal_planer.cpp.i
+
+src/goal_planer.s: src/goal_planer.cpp.s
+.PHONY : src/goal_planer.s
+
+# target to generate assembly for a file
+src/goal_planer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/goal_planer.dir/build.make CMakeFiles/goal_planer.dir/src/goal_planer.cpp.s
+.PHONY : src/goal_planer.cpp.s
+
+src/line_following_with_camera.o: src/line_following_with_camera.cpp.o
+.PHONY : src/line_following_with_camera.o
+
+# target to build an object file
+src/line_following_with_camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineFollowing.dir/build.make CMakeFiles/lineFollowing.dir/src/line_following_with_camera.cpp.o
+.PHONY : src/line_following_with_camera.cpp.o
+
+src/line_following_with_camera.i: src/line_following_with_camera.cpp.i
+.PHONY : src/line_following_with_camera.i
+
+# target to preprocess a source file
+src/line_following_with_camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineFollowing.dir/build.make CMakeFiles/lineFollowing.dir/src/line_following_with_camera.cpp.i
+.PHONY : src/line_following_with_camera.cpp.i
+
+src/line_following_with_camera.s: src/line_following_with_camera.cpp.s
+.PHONY : src/line_following_with_camera.s
+
+# target to generate assembly for a file
+src/line_following_with_camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lineFollowing.dir/build.make CMakeFiles/lineFollowing.dir/src/line_following_with_camera.cpp.s
+.PHONY : src/line_following_with_camera.cpp.s
+
+src/lqr_lib.o: src/lqr_lib.cpp.o
+.PHONY : src/lqr_lib.o
+
+# target to build an object file
+src/lqr_lib.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_lib.dir/build.make CMakeFiles/lqr_lib.dir/src/lqr_lib.cpp.o
+.PHONY : src/lqr_lib.cpp.o
+
+src/lqr_lib.i: src/lqr_lib.cpp.i
+.PHONY : src/lqr_lib.i
+
+# target to preprocess a source file
+src/lqr_lib.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_lib.dir/build.make CMakeFiles/lqr_lib.dir/src/lqr_lib.cpp.i
+.PHONY : src/lqr_lib.cpp.i
+
+src/lqr_lib.s: src/lqr_lib.cpp.s
+.PHONY : src/lqr_lib.s
+
+# target to generate assembly for a file
+src/lqr_lib.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_lib.dir/build.make CMakeFiles/lqr_lib.dir/src/lqr_lib.cpp.s
+.PHONY : src/lqr_lib.cpp.s
+
+src/lqr_node.o: src/lqr_node.cpp.o
+.PHONY : src/lqr_node.o
+
+# target to build an object file
+src/lqr_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_node.dir/build.make CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o
+.PHONY : src/lqr_node.cpp.o
+
+src/lqr_node.i: src/lqr_node.cpp.i
+.PHONY : src/lqr_node.i
+
+# target to preprocess a source file
+src/lqr_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_node.dir/build.make CMakeFiles/lqr_node.dir/src/lqr_node.cpp.i
+.PHONY : src/lqr_node.cpp.i
+
+src/lqr_node.s: src/lqr_node.cpp.s
+.PHONY : src/lqr_node.s
+
+# target to generate assembly for a file
+src/lqr_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lqr_node.dir/build.make CMakeFiles/lqr_node.dir/src/lqr_node.cpp.s
+.PHONY : src/lqr_node.cpp.s
+
+src/robotic_arm_tf_broadcaster.o: src/robotic_arm_tf_broadcaster.cpp.o
+.PHONY : src/robotic_arm_tf_broadcaster.o
+
+# target to build an object file
+src/robotic_arm_tf_broadcaster.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robotic_arm_tf_broadcaster.dir/build.make CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.o
+.PHONY : src/robotic_arm_tf_broadcaster.cpp.o
+
+src/robotic_arm_tf_broadcaster.i: src/robotic_arm_tf_broadcaster.cpp.i
+.PHONY : src/robotic_arm_tf_broadcaster.i
+
+# target to preprocess a source file
+src/robotic_arm_tf_broadcaster.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robotic_arm_tf_broadcaster.dir/build.make CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.i
+.PHONY : src/robotic_arm_tf_broadcaster.cpp.i
+
+src/robotic_arm_tf_broadcaster.s: src/robotic_arm_tf_broadcaster.cpp.s
+.PHONY : src/robotic_arm_tf_broadcaster.s
+
+# target to generate assembly for a file
+src/robotic_arm_tf_broadcaster.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/robotic_arm_tf_broadcaster.dir/build.make CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.s
+.PHONY : src/robotic_arm_tf_broadcaster.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +397,26 @@ help:
 	@echo "... test"
 	@echo "... module_5_assignment_uninstall"
 	@echo "... uninstall"
+	@echo "... goal_planer"
+	@echo "... lineFollowing"
+	@echo "... lqr_lib"
+	@echo "... lqr_node"
+	@echo "... robotic_arm_tf_broadcaster"
+	@echo "... src/goal_planer.o"
+	@echo "... src/goal_planer.i"
+	@echo "... src/goal_planer.s"
+	@echo "... src/line_following_with_camera.o"
+	@echo "... src/line_following_with_camera.i"
+	@echo "... src/line_following_with_camera.s"
+	@echo "... src/lqr_lib.o"
+	@echo "... src/lqr_lib.i"
+	@echo "... src/lqr_lib.s"
+	@echo "... src/lqr_node.o"
+	@echo "... src/lqr_node.i"
+	@echo "... src/lqr_node.s"
+	@echo "... src/robotic_arm_tf_broadcaster.o"
+	@echo "... src/robotic_arm_tf_broadcaster.i"
+	@echo "... src/robotic_arm_tf_broadcaster.s"
 .PHONY : help
 
 

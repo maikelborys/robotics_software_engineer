@@ -1,0 +1,16 @@
+[0.010s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
+[0.061s] [ 10%] [32mBuilding CXX object CMakeFiles/lqr_lib.dir/src/lqr_lib.cpp.o[0m
+[0.061s] [ 50%] Built target goal_planer
+[0.061s] [ 60%] Built target lineFollowing
+[0.062s] [ 70%] Built target robotic_arm_tf_broadcaster
+[6.840s] [ 80%] [32m[1mLinking CXX static library liblqr_lib.a[0m
+[7.042s] [ 80%] Built target lqr_lib
+[7.068s] [ 90%] [32mBuilding CXX object CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o[0m
+[7.077s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment/src/lqr_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kangles/angles.h: No such file or directory
+[7.077s]     1 | #include [01;31m[K<angles/angles.h>[m[K
+[7.077s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[7.077s] compilation terminated.
+[7.080s] gmake[2]: *** [CMakeFiles/lqr_node.dir/build.make:76: CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o] Error 1
+[7.081s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/lqr_node.dir/all] Error 2
+[7.081s] gmake: *** [Makefile:146: all] Error 2
+[7.084s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16

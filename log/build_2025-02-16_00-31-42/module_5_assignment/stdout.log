@@ -1,0 +1,5 @@
+[ 40%] Built target goal_planer
+[ 40%] Built target lqr_lib
+[ 60%] Built target lineFollowing
+[ 80%] Built target robotic_arm_tf_broadcaster
+[ 90%] [32mBuilding CXX object CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o[0m

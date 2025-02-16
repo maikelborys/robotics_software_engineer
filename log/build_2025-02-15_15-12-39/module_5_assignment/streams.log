@@ -1,0 +1,33 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
+[0.033s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.126s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.137s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.175s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.177s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.182s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.190s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.199s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.225s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.226s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.332s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.371s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.393s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.404s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.470s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.538s] -- Configuring done
+[0.558s] -- Generating done
+[0.564s] -- Build files have been written to: /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment
+[0.589s] [35m[1mConsolidate compiler generated dependencies of target lineFollowing[0m
+[0.590s] [35m[1mConsolidate compiler generated dependencies of target robotic_arm_tf_broadcaster[0m
+[0.591s] [35m[1mConsolidate compiler generated dependencies of target goal_planer[0m
+[0.608s] [ 16%] [32mBuilding CXX object CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.o[0m
+[0.608s] [ 50%] Built target lineFollowing
+[0.609s] [ 83%] Built target goal_planer
+[0.858s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment/src/robotic_arm_tf_broadcaster.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joint_state.hpp: No such file or directory
+[0.858s]     8 | #include [01;31m[K"sensor_msgs/msg/joint_state.hpp"[m[K  // Added for joint state publishing
+[0.858s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.858s] compilation terminated.
+[0.863s] gmake[2]: *** [CMakeFiles/robotic_arm_tf_broadcaster.dir/build.make:76: CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.o] Error 1
+[0.864s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/robotic_arm_tf_broadcaster.dir/all] Error 2
+[0.864s] gmake: *** [Makefile:146: all] Error 2
+[0.867s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16

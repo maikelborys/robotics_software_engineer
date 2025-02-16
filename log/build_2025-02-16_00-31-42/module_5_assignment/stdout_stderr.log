@@ -1,0 +1,13 @@
+[ 40%] Built target goal_planer
+[ 40%] Built target lqr_lib
+[ 60%] Built target lineFollowing
+[ 80%] Built target robotic_arm_tf_broadcaster
+[ 90%] [32mBuilding CXX object CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o[0m
+In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment/src/lqr_node.cpp:3[m[K:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment/include/lqr_node.hpp:12:10:[m[K [01;31m[Kfatal error: [m[Kvisualization_msgs/msg/marker.hpp: No such file or directory
+   12 | #include [01;31m[K<visualization_msgs/msg/marker.hpp>[m[K  // added for RViz visualization
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/lqr_node.dir/build.make:76: CMakeFiles/lqr_node.dir/src/lqr_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/lqr_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

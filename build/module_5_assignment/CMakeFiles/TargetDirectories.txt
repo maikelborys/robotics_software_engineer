@@ -1,5 +1,10 @@
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/uninstall.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/module_5_assignment_uninstall.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/lineFollowing.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/goal_planer.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/robotic_arm_tf_broadcaster.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/lqr_lib.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/lqr_node.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/test.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/edit_cache.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment/CMakeFiles/rebuild_cache.dir

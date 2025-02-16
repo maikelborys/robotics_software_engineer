@@ -1,0 +1,12 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
+[0.065s] [ 50%] [32mBuilding CXX object CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.o[0m
+[0.065s] [ 50%] Built target goal_planer
+[0.065s] [ 83%] Built target lineFollowing
+[0.318s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_5_assignment/src/robotic_arm_tf_broadcaster.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/msg/joint_state.hpp: No such file or directory
+[0.318s]     8 | #include [01;31m[K<sensor_msgs/msg/joint_state.hpp>[m[K  // Changed from quotes to angle brackets
+[0.318s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.318s] compilation terminated.
+[0.322s] gmake[2]: *** [CMakeFiles/robotic_arm_tf_broadcaster.dir/build.make:76: CMakeFiles/robotic_arm_tf_broadcaster.dir/src/robotic_arm_tf_broadcaster.cpp.o] Error 1
+[0.323s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/robotic_arm_tf_broadcaster.dir/all] Error 2
+[0.323s] gmake: *** [Makefile:146: all] Error 2
+[0.326s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_5_assignment -- -j16 -l16
