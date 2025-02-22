@@ -7,9 +7,42 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(Eigen3 REQUIRED)
+
+# If you do not have src/ekf_lib.cpp, remove the ekf_lib target.
+# Otherwise, add ekf_lib.cpp in src/ or update the file path.
+
+# Uncomment below if ekf_lib.cpp is available:
+# add_library(ekf_lib src/ekf_lib.cpp)
+# target_include_directories(ekf_lib PRIVATE ${EIGEN3_INCLUDE_DIRS} include)
+# target_link_libraries(ekf_lib Eigen3::Eigen)
+# ament_target_dependencies(ekf_lib rclcpp)
+
+# Add executable for sensor_display_node
+add_executable(sensor_display_node src/sensor_display.cpp)
+ament_target_dependencies(sensor_display_node rclcpp nav_msgs sensor_msgs visualization_msgs geometry_msgs)
+install(TARGETS sensor_display_node
+  DESTINATION lib/${PROJECT_NAME})
+
+# Add executable for the EKF experiment node and link with ekf_lib
+add_executable(ekf_experiment_node src/ekf_experiment_node.cpp)
+ament_target_dependencies(ekf_experiment_node rclcpp nav_msgs visualization_msgs)
+target_include_directories(ekf_experiment_node PRIVATE ${EIGEN3_INCLUDE_DIRS} include)
+# If EKF functions are implemented inline in the header or available via another library, remove the link below:
+# target_link_libraries(ekf_experiment_node ekf_lib)
+
+install(TARGETS
+  sensor_display_node
+  ekf_experiment_node
+  DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY launch config
+ DESTINATION share/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

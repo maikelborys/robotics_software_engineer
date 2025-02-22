@@ -1,0 +1,29 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o[0m
+[ 75%] Built target sensor_display_node
+[100%] [32m[1mLinking CXX executable ekf_experiment_node[0m
+[100%] Built target ekf_experiment_node
+-- Install configuration: ""
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/module_6_assignment/sensor_display_node
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/module_6_assignment/sensor_display_node
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/module_6_assignment/ekf_experiment_node
+-- Set runtime path of "/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/lib/module_6_assignment/ekf_experiment_node" to ""
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/launch
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/launch/ekf_imu_odom.launch.py
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/launch/ekf_tb3_imu_odom.launch.py
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/config
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/config/ekf_tb3_imu_odom.yaml
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/ament_index/resource_index/package_run_dependencies/module_6_assignment
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/ament_index/resource_index/parent_prefix_path/module_6_assignment
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/ament_prefix_path.sh
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/path.sh
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/path.dsv
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.bash
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.sh
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.zsh
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.dsv
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.dsv
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/ament_index/resource_index/packages/module_6_assignment
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/cmake/module_6_assignmentConfig.cmake
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/cmake/module_6_assignmentConfig-version.cmake
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.xml

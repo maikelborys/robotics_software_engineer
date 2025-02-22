@@ -1,0 +1,9 @@
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/src/ekf_experiment.cpp:238:5:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kint main(int, char**)[m[K’
+  238 | int [01;31m[Kmain[m[K(int argc, char **argv)
+      |     [01;31m[K^~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/src/ekf_experiment.cpp:229:5:[m[K [01;36m[Knote: [m[K‘[01m[Kint main(int, char**)[m[K’ previously defined here
+  229 | int [01;36m[Kmain[m[K(int argc, char **argv)
+      |     [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:76: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

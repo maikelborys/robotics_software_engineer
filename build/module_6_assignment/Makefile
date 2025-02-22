@@ -197,6 +197,80 @@ module_6_assignment_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_6_assignment_uninstall.dir/build.make CMakeFiles/module_6_assignment_uninstall.dir/build
 .PHONY : module_6_assignment_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named sensor_display_node
+
+# Build rule for target.
+sensor_display_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sensor_display_node
+.PHONY : sensor_display_node
+
+# fast build rule for target.
+sensor_display_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_display_node.dir/build.make CMakeFiles/sensor_display_node.dir/build
+.PHONY : sensor_display_node/fast
+
+#=============================================================================
+# Target rules for targets named ekf_experiment_node
+
+# Build rule for target.
+ekf_experiment_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ekf_experiment_node
+.PHONY : ekf_experiment_node
+
+# fast build rule for target.
+ekf_experiment_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_experiment_node.dir/build.make CMakeFiles/ekf_experiment_node.dir/build
+.PHONY : ekf_experiment_node/fast
+
+src/ekf_experiment_node.o: src/ekf_experiment_node.cpp.o
+.PHONY : src/ekf_experiment_node.o
+
+# target to build an object file
+src/ekf_experiment_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_experiment_node.dir/build.make CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment_node.cpp.o
+.PHONY : src/ekf_experiment_node.cpp.o
+
+src/ekf_experiment_node.i: src/ekf_experiment_node.cpp.i
+.PHONY : src/ekf_experiment_node.i
+
+# target to preprocess a source file
+src/ekf_experiment_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_experiment_node.dir/build.make CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment_node.cpp.i
+.PHONY : src/ekf_experiment_node.cpp.i
+
+src/ekf_experiment_node.s: src/ekf_experiment_node.cpp.s
+.PHONY : src/ekf_experiment_node.s
+
+# target to generate assembly for a file
+src/ekf_experiment_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ekf_experiment_node.dir/build.make CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment_node.cpp.s
+.PHONY : src/ekf_experiment_node.cpp.s
+
+src/sensor_display.o: src/sensor_display.cpp.o
+.PHONY : src/sensor_display.o
+
+# target to build an object file
+src/sensor_display.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_display_node.dir/build.make CMakeFiles/sensor_display_node.dir/src/sensor_display.cpp.o
+.PHONY : src/sensor_display.cpp.o
+
+src/sensor_display.i: src/sensor_display.cpp.i
+.PHONY : src/sensor_display.i
+
+# target to preprocess a source file
+src/sensor_display.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_display_node.dir/build.make CMakeFiles/sensor_display_node.dir/src/sensor_display.cpp.i
+.PHONY : src/sensor_display.cpp.i
+
+src/sensor_display.s: src/sensor_display.cpp.s
+.PHONY : src/sensor_display.s
+
+# target to generate assembly for a file
+src/sensor_display.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sensor_display_node.dir/build.make CMakeFiles/sensor_display_node.dir/src/sensor_display.cpp.s
+.PHONY : src/sensor_display.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +286,14 @@ help:
 	@echo "... test"
 	@echo "... module_6_assignment_uninstall"
 	@echo "... uninstall"
+	@echo "... ekf_experiment_node"
+	@echo "... sensor_display_node"
+	@echo "... src/ekf_experiment_node.o"
+	@echo "... src/ekf_experiment_node.i"
+	@echo "... src/ekf_experiment_node.s"
+	@echo "... src/sensor_display.o"
+	@echo "... src/sensor_display.i"
+	@echo "... src/sensor_display.s"
 .PHONY : help
 
 

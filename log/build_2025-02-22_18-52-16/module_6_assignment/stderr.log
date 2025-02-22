@@ -1,0 +1,9 @@
+/usr/bin/ld: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o: in function `EKFExperimentNode::run_experiments()':
+ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x58e): undefined reference to `ExtendedKalmanFilter::ExtendedKalmanFilter()'
+/usr/bin/ld: ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x69c): undefined reference to `ExtendedKalmanFilter::initialize(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&)'
+/usr/bin/ld: ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x709): undefined reference to `ExtendedKalmanFilter::predict()'
+/usr/bin/ld: ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x73b): undefined reference to `ExtendedKalmanFilter::update(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:151: ekf_experiment_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

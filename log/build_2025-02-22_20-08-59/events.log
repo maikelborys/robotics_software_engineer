@@ -1,0 +1,93 @@
+[0.000000] (-) TimerEvent: {}
+[0.000506] (-) JobUnselected: {'identifier': 'module_1_assignment'}
+[0.000597] (-) JobUnselected: {'identifier': 'module_2_assignment'}
+[0.000614] (-) JobUnselected: {'identifier': 'module_3_assignment'}
+[0.000627] (-) JobUnselected: {'identifier': 'module_4_assignment'}
+[0.000640] (-) JobUnselected: {'identifier': 'module_5_assignment'}
+[0.000653] (-) JobUnselected: {'identifier': 'module_7_assignment'}
+[0.000665] (-) JobUnselected: {'identifier': 'module_8_assignment'}
+[0.000680] (module_6_assignment) JobQueued: {'identifier': 'module_6_assignment', 'dependencies': OrderedDict()}
+[0.000697] (module_6_assignment) JobStarted: {'identifier': 'module_6_assignment'}
+[0.008768] (module_6_assignment) JobProgress: {'identifier': 'module_6_assignment', 'progress': 'cmake'}
+[0.009264] (module_6_assignment) JobProgress: {'identifier': 'module_6_assignment', 'progress': 'build'}
+[0.009924] (module_6_assignment) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment', '--', '-j16', '-l16'], 'cwd': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maikelborys'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maikelborys/ros2_ws/install/ros2_kitti_publishers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maikelborys'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/maikelborys/assignment_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1249'), ('SYSTEMD_EXEC_PID', '2047'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8426'), ('COLCON_PREFIX_PATH', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install:/home/maikelborys/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maikelborys'), ('JOURNAL_STREAM', '8:40148'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maikelborys'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maikelborys/miniconda3/condabin:/opt/ros/humble/bin:/home/maikelborys/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maikelborys-A520-AORUS-ELITE:@/tmp/.ICE-unix/1985,unix/maikelborys-A520-AORUS-ELITE:/tmp/.ICE-unix/1985'), ('INVOCATION_ID', 'cae41b54d21b44b7b36ba8bc095b1f75'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/maikelborys/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:514b5e31-abc1-4c80-b995-6cfa508150ff'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/maikelborys/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble')]), 'shell': False}
+[0.052927] (module_6_assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target ekf_experiment_node\x1b[0m\n'}
+[0.065000] (module_6_assignment) StdoutLine: {'line': b'[ 50%] Built target sensor_display_node\n'}
+[0.072644] (module_6_assignment) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o\x1b[0m\n'}
+[0.099638] (-) TimerEvent: {}
+[0.199932] (-) TimerEvent: {}
+[0.300271] (-) TimerEvent: {}
+[0.381500] (module_6_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/src/ekf_experiment.cpp:240:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunterminated comment\n'}
+[0.381803] (module_6_assignment) StderrLine: {'line': b'  240 | \x1b[01;31m\x1b[K/\x1b[m\x1b[K*\n'}
+[0.381937] (module_6_assignment) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[0.400384] (-) TimerEvent: {}
+[0.500717] (-) TimerEvent: {}
+[0.601039] (-) TimerEvent: {}
+[0.701374] (-) TimerEvent: {}
+[0.801708] (-) TimerEvent: {}
+[0.902034] (-) TimerEvent: {}
+[1.002361] (-) TimerEvent: {}
+[1.102665] (-) TimerEvent: {}
+[1.202988] (-) TimerEvent: {}
+[1.303321] (-) TimerEvent: {}
+[1.403637] (-) TimerEvent: {}
+[1.503969] (-) TimerEvent: {}
+[1.604307] (-) TimerEvent: {}
+[1.704628] (-) TimerEvent: {}
+[1.804955] (-) TimerEvent: {}
+[1.905262] (-) TimerEvent: {}
+[2.005561] (-) TimerEvent: {}
+[2.105872] (-) TimerEvent: {}
+[2.206220] (-) TimerEvent: {}
+[2.306594] (-) TimerEvent: {}
+[2.406951] (-) TimerEvent: {}
+[2.507286] (-) TimerEvent: {}
+[2.607622] (-) TimerEvent: {}
+[2.707939] (-) TimerEvent: {}
+[2.808266] (-) TimerEvent: {}
+[2.908605] (-) TimerEvent: {}
+[3.008933] (-) TimerEvent: {}
+[3.109252] (-) TimerEvent: {}
+[3.209594] (-) TimerEvent: {}
+[3.309929] (-) TimerEvent: {}
+[3.410263] (-) TimerEvent: {}
+[3.510617] (-) TimerEvent: {}
+[3.610954] (-) TimerEvent: {}
+[3.711316] (-) TimerEvent: {}
+[3.811651] (-) TimerEvent: {}
+[3.911985] (-) TimerEvent: {}
+[4.012342] (-) TimerEvent: {}
+[4.112674] (-) TimerEvent: {}
+[4.213001] (-) TimerEvent: {}
+[4.313337] (-) TimerEvent: {}
+[4.413661] (-) TimerEvent: {}
+[4.513970] (-) TimerEvent: {}
+[4.614256] (-) TimerEvent: {}
+[4.714582] (-) TimerEvent: {}
+[4.814918] (-) TimerEvent: {}
+[4.915246] (-) TimerEvent: {}
+[5.015595] (-) TimerEvent: {}
+[5.115928] (-) TimerEvent: {}
+[5.216263] (-) TimerEvent: {}
+[5.316598] (-) TimerEvent: {}
+[5.416889] (-) TimerEvent: {}
+[5.517217] (-) TimerEvent: {}
+[5.617561] (-) TimerEvent: {}
+[5.717896] (-) TimerEvent: {}
+[5.818226] (-) TimerEvent: {}
+[5.918583] (-) TimerEvent: {}
+[6.018913] (-) TimerEvent: {}
+[6.119252] (-) TimerEvent: {}
+[6.219616] (-) TimerEvent: {}
+[6.319963] (-) TimerEvent: {}
+[6.420326] (-) TimerEvent: {}
+[6.520653] (-) TimerEvent: {}
+[6.620995] (-) TimerEvent: {}
+[6.721363] (-) TimerEvent: {}
+[6.821699] (-) TimerEvent: {}
+[6.885410] (module_6_assignment) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:76: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o] Error 1\n'}
+[6.885853] (module_6_assignment) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2\n'}
+[6.886285] (module_6_assignment) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.890087] (module_6_assignment) CommandEnded: {'returncode': 2}
+[6.897895] (module_6_assignment) JobEnded: {'identifier': 'module_6_assignment', 'rc': 2}
+[6.908146] (-) EventReactorShutdown: {}

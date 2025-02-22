@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target ekf_experiment_node[0m
+[ 50%] Built target sensor_display_node
+[ 75%] [32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o[0m

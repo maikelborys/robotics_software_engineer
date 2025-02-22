@@ -1,0 +1,39 @@
+[0.045s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16
+[0.117s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.373s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.578s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.589s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.628s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.646s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.671s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.738s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.741s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.931s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.013s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.083s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.112s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.152s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.286s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.286s] -- Configured cppcheck include dirs: /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/include
+[1.286s] -- Configured cppcheck exclude dirs and/or files: 
+[1.287s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.287s] -- Added test 'lint_cmake' to check CMake code style
+[1.288s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.290s] -- Added test 'uncrustify' to check C / C++ code style
+[1.290s] -- Configured uncrustify additional arguments: 
+[1.290s] -- Added test 'xmllint' to check XML markup files
+[1.291s] -- Configuring done
+[1.319s] -- Generating done
+[1.328s] -- Build files have been written to: /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment
+[1.359s] [35m[1mConsolidate compiler generated dependencies of target sensor_display_node[0m
+[1.368s] [ 25%] [32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o[0m
+[1.378s] [ 75%] Built target sensor_display_node
+[1.878s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/src/ekf_experiment.cpp:2[m[K:
+[1.878s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/include/ekf_lib.hpp:4:10:[m[K [01;31m[Kfatal error: [m[KEigen/Dense: No such file or directory
+[1.878s]     4 | #include [01;31m[K<Eigen/Dense>[m[K
+[1.878s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[1.878s] compilation terminated.
+[1.882s] gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:76: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o] Error 1
+[1.883s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2
+[1.883s] gmake: *** [Makefile:146: all] Error 2
+[1.887s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16

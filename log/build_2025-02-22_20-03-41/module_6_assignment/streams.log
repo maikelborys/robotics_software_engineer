@@ -1,0 +1,11 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16
+[0.064s] [ 50%] Built target sensor_display_node
+[0.065s] [ 75%] [32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o[0m
+[0.329s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/src/ekf_experiment.cpp:5:10:[m[K [01;31m[Kfatal error: [m[Knav_msgs/msg/odometry.hpp: No such file or directory
+[0.329s]     5 | #include [01;31m[K"nav_msgs/msg/odometry.hpp"[m[K
+[0.330s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.330s] compilation terminated.
+[0.335s] gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:76: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o] Error 1
+[0.335s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2
+[0.336s] gmake: *** [Makefile:146: all] Error 2
+[0.339s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16

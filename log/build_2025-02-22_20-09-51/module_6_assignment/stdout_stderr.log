@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target ekf_experiment_node[0m
+[ 50%] Built target sensor_display_node
+[ 75%] [32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o[0m
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/src/ekf_experiment.cpp:240:1:[m[K [01;31m[Kerror: [m[Kunterminated comment
+  240 | [01;31m[K/[m[K*
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:76: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

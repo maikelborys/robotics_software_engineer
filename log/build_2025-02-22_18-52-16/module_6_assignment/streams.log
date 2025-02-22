@@ -1,0 +1,41 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16
+[0.033s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.144s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.190s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.192s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.196s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.204s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.215s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.241s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.242s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.350s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.389s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.412s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.425s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.477s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.528s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.529s] -- Configured cppcheck include dirs: /home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/include
+[0.529s] -- Configured cppcheck exclude dirs and/or files: 
+[0.529s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.529s] -- Added test 'lint_cmake' to check CMake code style
+[0.530s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.531s] -- Added test 'uncrustify' to check C / C++ code style
+[0.531s] -- Configured uncrustify additional arguments: 
+[0.531s] -- Added test 'xmllint' to check XML markup files
+[0.532s] -- Configuring done
+[0.544s] -- Generating done
+[0.551s] -- Build files have been written to: /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment
+[0.580s] [35m[1mConsolidate compiler generated dependencies of target sensor_display_node[0m
+[0.590s] [ 25%] [32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o[0m
+[0.598s] [ 75%] Built target sensor_display_node
+[3.753s] [100%] [32m[1mLinking CXX executable ekf_experiment_node[0m
+[4.277s] /usr/bin/ld: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o: in function `EKFExperimentNode::run_experiments()':
+[4.278s] ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x58e): undefined reference to `ExtendedKalmanFilter::ExtendedKalmanFilter()'
+[4.278s] /usr/bin/ld: ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x69c): undefined reference to `ExtendedKalmanFilter::initialize(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&, Eigen::Matrix<double, -1, -1, 0, -1, -1> const&)'
+[4.278s] /usr/bin/ld: ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x709): undefined reference to `ExtendedKalmanFilter::predict()'
+[4.278s] /usr/bin/ld: ekf_experiment.cpp:(.text._ZN17EKFExperimentNode15run_experimentsEv[_ZN17EKFExperimentNode15run_experimentsEv]+0x73b): undefined reference to `ExtendedKalmanFilter::update(Eigen::Matrix<double, -1, 1, 0, -1, 1> const&)'
+[4.294s] collect2: error: ld returned 1 exit status
+[4.297s] gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:151: ekf_experiment_node] Error 1
+[4.297s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2
+[4.297s] gmake: *** [Makefile:146: all] Error 2
+[4.301s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16

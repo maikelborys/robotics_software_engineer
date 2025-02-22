@@ -1,8 +1,5 @@
 # Module 6 Assignment: IMU and GPS Sensor Fusion for TurtleBot3
 
-## Objective
-
-This assignment focuses on implementing and analyzing an Extended Kalman Filter (EKF) for fusing IMU and GPS data to improve the localization accuracy of TurtleBot3 in a simulated environment. You will create a sensor fusion node, visualize the results, and experiment with different noise covariance matrices to understand their impact on the robot's state estimation.
 
 ## Task: IMU and GPS Sensor Fusion for TurtleBot3
 
@@ -10,47 +7,115 @@ This assignment focuses on implementing and analyzing an Extended Kalman Filter 
 
 1. **Set Up the Sensor Fusion Node:**
    - Utilize the provided EKF implementation to fuse data from TurtleBot3's IMU and GPS sensors.
-   - Ensure that the EKF node processes the sensor data and outputs an accurate estimation of the robot's position and orientation.
+   - Ensure that the EKF node processes the sensor data and outputs an accurate estimation of the robot's position and orientation.\
+
+   1. Lets moove at our project workspace 
+      *** cd /assignment_ws/src/robotics_software_engineer ***
+
+      Initialize a source 
+      *** source install/setup.bash ***
+
+      Compile package of our lesson 
+      *** colcon build --packages-select module_6_assignment ***
+   
+   2. To make possible to use EKF implementation we need to install Localization package sudo apt 
+      *** install ros-humble-robot-localization ***
+
+   3. Create config folder and yaml file for our EKF implementation sensor fusion 
+      *** config/ekf_tb3_imu_odom.yaml ***
+
+   4. Create launch folder and launch file to bring our EKF node with config works 
+      *** launch/ekf_imu_odom.launch.py ***
+
+   5. Add launch config DIRECTORY at CMakeLists.txt
+
+   5. To run a fuse sensor program we need to build, open turtle3bot and than launch our EKF node
+      *** colcon build --packages-select module_6_assignment ***
+      *** ros2 launch turtlebot3_gazebo empty_world.launch.py ***
+      *** ros2 launch module_6_assignment ekf_imu_odom.launch.py ***
+
+   6. Ensure that EKF node processes sensor data and outputs estimation running Rqt Graph 
+      *** ros2 run rqt_graph rqt_graph ***
+      Select /ekf_filter_node. We see that node receive /imu, /odom and returns /odometry/filtered 
+      With *** ros2 topic echo /odometry/filtered *** we can observe sensor flow at real time 
+
 
 2. **Create a Custom Launch File:**
-   - Develop a ROS 2 launch file to start the TurtleBot3 simulation along with the EKF sensor fusion node.
-   - The launch file should be configured to include all necessary parameters and topics for IMU and GPS data inputs.
+   1. Create new launch file *** ekf_tb3_imu_odom.launch.py *** 
+   2. Launch file contains turtlebot3 and ekf_node from localization package + config yaml there 
+   3. Build, Run and ensure that its worked properly: Gazeboo wirh turtlebot and emptyworld starts, with *** ros2 topic list *** we can see /odometry/filtered topic running 
+
 
 3. **Visualize the Fused Data:**
-   - Use RViz to visualize the robot’s estimated position and orientation as calculated by the EKF.
-   - Display the raw IMU and GPS data alongside the fused output to demonstrate the improvement in localization accuracy.
+   1. Lets run *** rviz2 *** to visualize fused data 
+      After rviz2 starts, put fixed frame to ODOM 
+      Than check out TF 
+   2. For display raw IMU and GPS data lets create new SensorDisplayNode (sensor_display.cpp) that 
+      subscribes to /odom topic and publish a red LINE_STRIP marker
+      subscribes to /imu topic and publish as a blue Arrow marker
+      subscribes to /odometry/filtered that outputs ekf localization node and publish a Green arrow of FUSED SENSOR
+
+   3. Add dependency rlcpp, nav_msgs, sensor_msgs, visualization_msgs, geometry_msgs
+      Add executable and dependencies 
+      Add install targets sensor_display_node 
+   
+   4. Add sensor_display_node at launch file 
+
+   5. To run
+      *** ros2 launch module_6_assignment ekf_tb3_imu_odom.launch.py ***
+      *** rviz2 ***, fixed frame odom, addd marker by topic 
+
+   6. We can see a blue arrow that is IMU current vector, red trace that is odom history and green arrow that is fused IMU and GPS. 
+
+
+         ## Visualized Fused Data
+
+         Below is a visualization of the fused sensor data:
+
+         ![Fused Data Visualization](_GIF/task3_fusedData.gif)
 
 4. **Experiment with Different Q and R Values:**
-   - Test the EKF with three different sets of Q (process noise covariance) and R (measurement noise covariance) matrices.
-   - Document the behavior of the robot's state estimation under each set of values, focusing on how the changes in Q and R affect the accuracy and stability of the EKF.
 
-5. **Analyze and Document the Results:**
-   - Provide a detailed analysis of the impact of different Q and R values on the EKF’s performance.
-   - Include screenshots or recordings from RViz showing the robot’s path and the fused sensor data for each set of parameters.
-   - Discuss which set of Q and R values provided the best balance between accuracy and stability for TurtleBot3’s localization.
----
-## Submission Process
+   1. Lets create ekf_experiment_node to test EKF with three diferent sets 
 
-1. **Create Files:**
-   - Navigate to the `module_6_assignment` package.
-   - Create the required files for the EKF node, the custom launch file, and the documentation.
+   2. change cmakelists 
 
-2. **Document Your Work:**
-   - Create a `README.md` file in the `module_6_assignment` package.
-   - Provide details about the files you created, including explanations of the code and the commands needed to run your sensor fusion node and visualizations.
+   3. Create launch file to run a node with gazeboo simulation
 
-3. **Submit Your Assignment:**
-   - Push your changes to your forked repository.
-   - Provide your repository link in the assignment submission text area.
-   - **Note**: Ensure you press the "Start Assignment" button when you see the page (as it takes time to generate the pages).
+   4. RUN *** ros2 launch module_6_assignment ekf_experiment_low_noise.launch.py  *** with parameters of Q and R that you can change *** parameters=[{'use_sim_time': True, 'process_noise': 0.1, 'measurement_noise': 0.1}] *** 
 
-4. **Wait for Review:**
-   - Wait for the instructors to review your submission.
+   5. Run rVIZ and add a marker /visualization_marker 
 
-## Learning Outcome
+      ![Diferent Q and R](_GIF/task4_fusedData.gif)
 
-By completing this assignment, you will:
-- Understand the principles of sensor fusion using an Extended Kalman Filter (EKF).
-- Gain hands-on experience with fusing IMU and GPS data to improve robot localization.
-- Learn how to configure and tune an EKF for optimal performance in a simulated environment.
-- Develop the skills to visualize and analyze fused sensor data using ROS 2 and RViz.
+
+
+5. **Analyze and Document the Results:** 
+
+      • In the ekf_experiment_node you run three experiments using low, medium, and high noise settings.  
+       – For each experiment, the EKF is reinitialized with different process (Q) and measurement (R) noise covariances by calling the helper setMatrices() before prediction and update steps.  
+      • You then log the estimated state for each experiment.
+
+      Benefits & Observations:  
+       – With lower noise values, the filter is more sensitive to incoming measurements, which can result in faster convergence but may also pick up more noise.  
+       – With medium noise values, there typically is a balanced tradeoff between responsiveness and stability.  
+       – With higher noise values, the filter relies more on the model prediction than on the measurements, leading to smoother estimates with potentially delayed response.
+
+      By documenting the estimated states and any observed delay or instability, you can decide which Q and R settings produce the most accurate and stable state estimation for your application.
+
+      Robot Behavior with Different Q and R Values
+
+      1. **Low Noise (Q = 0.1 * I, R = 0.1 * I):**
+         - **Behavior:** The EKF is highly responsive to incoming measurements. This means the filter quickly adjusts the state estimate based on the sensor data.
+         - **Observations:** You may notice that the estimated path (green arrow in RViz) closely follows the raw GPS data (red sphere). However, this can also result in the filter picking up more noise from the measurements, leading to a less smooth path.
+         - **Use Case:** This setting is useful when you need the filter to react quickly to changes in the environment, but it may not be ideal if the sensor data is noisy.
+      2. **Medium Noise (Q = 0.01 * I, R = 0.05 * I):**
+         - **Behavior:** The EKF provides a balanced tradeoff between responsiveness and stability. The filter smooths out some of the noise while still reacting reasonably quickly to changes in the sensor data.
+         - **Observations:** The estimated path is smoother than with low noise settings, and it still follows the general trend of the raw GPS data. This setting often provides a good balance for many applications.
+         - **Use Case:** This setting is useful for general-purpose applications where you need a balance between accuracy and stability.
+      3. **High Noise (Q = 0.5 * I, R = 0.5 * I):**
+         - **Behavior:** The EKF relies more on the model prediction than on the measurements. This results in a very smooth and stable path but may delay corrections from actual sensor readings.
+         - **Observations:** The estimated path is much smoother and less responsive to sudden changes in the sensor data. The filter may lag behind the actual position of the robot, especially if there are rapid changes in the environment.
+         - **Use Case:** This setting is useful when you need a very stable estimate and can tolerate some delay in the filter's response to changes in the environment.
+
+

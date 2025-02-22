@@ -1,0 +1,10 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target ekf_experiment_node[0m
+[0.062s] [ 50%] Built target sensor_display_node
+[0.070s] [ 75%] [32mBuilding CXX object CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o[0m
+[0.074s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_6_assignment/src/ekf_experiment.cpp: No such file or directory
+[0.074s] compilation terminated.
+[0.075s] gmake[2]: *** [CMakeFiles/ekf_experiment_node.dir/build.make:76: CMakeFiles/ekf_experiment_node.dir/src/ekf_experiment.cpp.o] Error 1
+[0.075s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/ekf_experiment_node.dir/all] Error 2
+[0.075s] gmake: *** [Makefile:146: all] Error 2
+[0.080s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j16 -l16
