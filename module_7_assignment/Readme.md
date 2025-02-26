@@ -3,14 +3,14 @@
 
 ### Task 1: Create a 2D LIDAR-Based Map
 
-    1. **Set Up the Maze Environment:**
+Set Up the Maze Environment:**
          Lets create Maze map manually:
             Open Gazebo empty world ros2 launch turtlebot3_gazebo empty_world.launch.py
             Edit/Building Editor (Ctrl+B)
             Draw a walls, put texture
             File exit/save as/module_7_assignment project/Create models folder/save @maze@
 
-         We need to create launch file to bring our map at world with rviz, than build
+        We need to create launch file to bring our map at world with rviz, than build
             colcon build --packages-select module_7_assignment
          Try if its working properly:
             ros2 launch module_7_assignment maze_tb3_bringup.launch.py 
@@ -51,7 +51,7 @@
 
       LIDAR scans combined with odometry refine robot’s pose and update the 2D occupancy grid.
 
-      ![Slam Toolbox Map gen](_GIFS/Assignment_Slam_Toolbox.gif)
+![Slam Toolbox Map gen](_GIFS/Assignment_Slam_Toolbox.gif)
 
     2. **3D Mapping with RTAB-Map:**
       Inputs:
@@ -76,7 +76,7 @@
          If your robot moves on the floor and just needs to navigate rooms, 2D mapping is enough.
          If your robot needs to recognize objects, handle stairs, or move in a multi-level space, 3D mapping is better.
 
-      ![RTAB Map](_GIFS/Rtab-Map.gif)
+ ![RTAB Map](_GIFS/Rtab-Map.gif)
          
 ### Task 3: Explain the Mapping Algorithm (Gmapping)
 
