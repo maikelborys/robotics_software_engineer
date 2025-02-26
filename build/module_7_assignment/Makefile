@@ -197,6 +197,80 @@ module_7_assignment_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/module_7_assignment_uninstall.dir/build.make CMakeFiles/module_7_assignment_uninstall.dir/build
 .PHONY : module_7_assignment_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named oc_grid_pub
+
+# Build rule for target.
+oc_grid_pub: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 oc_grid_pub
+.PHONY : oc_grid_pub
+
+# fast build rule for target.
+oc_grid_pub/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oc_grid_pub.dir/build.make CMakeFiles/oc_grid_pub.dir/build
+.PHONY : oc_grid_pub/fast
+
+#=============================================================================
+# Target rules for targets named lidar_to_grid
+
+# Build rule for target.
+lidar_to_grid: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lidar_to_grid
+.PHONY : lidar_to_grid
+
+# fast build rule for target.
+lidar_to_grid/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_to_grid.dir/build.make CMakeFiles/lidar_to_grid.dir/build
+.PHONY : lidar_to_grid/fast
+
+src/lidar_to_grid.o: src/lidar_to_grid.cpp.o
+.PHONY : src/lidar_to_grid.o
+
+# target to build an object file
+src/lidar_to_grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_to_grid.dir/build.make CMakeFiles/lidar_to_grid.dir/src/lidar_to_grid.cpp.o
+.PHONY : src/lidar_to_grid.cpp.o
+
+src/lidar_to_grid.i: src/lidar_to_grid.cpp.i
+.PHONY : src/lidar_to_grid.i
+
+# target to preprocess a source file
+src/lidar_to_grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_to_grid.dir/build.make CMakeFiles/lidar_to_grid.dir/src/lidar_to_grid.cpp.i
+.PHONY : src/lidar_to_grid.cpp.i
+
+src/lidar_to_grid.s: src/lidar_to_grid.cpp.s
+.PHONY : src/lidar_to_grid.s
+
+# target to generate assembly for a file
+src/lidar_to_grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lidar_to_grid.dir/build.make CMakeFiles/lidar_to_grid.dir/src/lidar_to_grid.cpp.s
+.PHONY : src/lidar_to_grid.cpp.s
+
+src/occupancy_grid.o: src/occupancy_grid.cpp.o
+.PHONY : src/occupancy_grid.o
+
+# target to build an object file
+src/occupancy_grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oc_grid_pub.dir/build.make CMakeFiles/oc_grid_pub.dir/src/occupancy_grid.cpp.o
+.PHONY : src/occupancy_grid.cpp.o
+
+src/occupancy_grid.i: src/occupancy_grid.cpp.i
+.PHONY : src/occupancy_grid.i
+
+# target to preprocess a source file
+src/occupancy_grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oc_grid_pub.dir/build.make CMakeFiles/oc_grid_pub.dir/src/occupancy_grid.cpp.i
+.PHONY : src/occupancy_grid.cpp.i
+
+src/occupancy_grid.s: src/occupancy_grid.cpp.s
+.PHONY : src/occupancy_grid.s
+
+# target to generate assembly for a file
+src/occupancy_grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/oc_grid_pub.dir/build.make CMakeFiles/oc_grid_pub.dir/src/occupancy_grid.cpp.s
+.PHONY : src/occupancy_grid.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +286,14 @@ help:
 	@echo "... test"
 	@echo "... module_7_assignment_uninstall"
 	@echo "... uninstall"
+	@echo "... lidar_to_grid"
+	@echo "... oc_grid_pub"
+	@echo "... src/lidar_to_grid.o"
+	@echo "... src/lidar_to_grid.i"
+	@echo "... src/lidar_to_grid.s"
+	@echo "... src/occupancy_grid.o"
+	@echo "... src/occupancy_grid.i"
+	@echo "... src/occupancy_grid.s"
 .PHONY : help
 
 

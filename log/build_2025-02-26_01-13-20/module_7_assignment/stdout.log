@@ -1,0 +1,10 @@
+[ 50%] Built target oc_grid_pub
+[100%] Built target lidar_to_grid
+-- Install configuration: ""
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/oc_grid_pub
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/lidar_to_grid
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch/map_loading_2d.launch.py
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch/maze_tb3_bringup.launch.py
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//world
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//world/maze.world

@@ -1,0 +1,18 @@
+[0.012s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment -- -j16 -l16
+[0.054s] [35m[1mConsolidate compiler generated dependencies of target lidar_to_grid[0m
+[0.067s] [ 50%] Built target oc_grid_pub
+[0.072s] [100%] Built target lidar_to_grid
+[0.083s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment -- -j16 -l16
+[0.093s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment
+[0.100s] -- Install configuration: ""
+[0.100s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/oc_grid_pub
+[0.100s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/lidar_to_grid
+[0.100s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch
+[0.100s] -- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch/maze_tb3_bringup.launch.py
+[0.101s] [31mCMake Error at cmake_install.cmake:86 (file):
+[0.101s]   file INSTALL cannot find
+[0.101s]   "/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment/worlds":
+[0.101s]   No such file or directory.
+[0.101s] 
+[0.101s] [0m
+[0.102s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment

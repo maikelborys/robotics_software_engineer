@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000400] (-) JobUnselected: {'identifier': 'LineFollowingRobot'}
+[0.000571] (-) JobUnselected: {'identifier': 'control_systems'}
+[0.000601] (-) JobUnselected: {'identifier': 'custom_robots'}
+[0.000625] (-) JobUnselected: {'identifier': 'drive_mobile_robot'}
+[0.000647] (-) JobUnselected: {'identifier': 'mapping'}
+[0.000671] (-) JobUnselected: {'identifier': 'path_planning'}
+[0.000693] (-) JobUnselected: {'identifier': 'robot_sensing'}
+[0.000714] (-) JobUnselected: {'identifier': 'sensor_fusion'}
+[0.000732] (-) EventReactorShutdown: {}

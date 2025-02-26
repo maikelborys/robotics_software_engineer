@@ -1,0 +1,20 @@
+[0.033s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment -- -j16 -l16
+[0.215s] [ 50%] Built target oc_grid_pub
+[0.221s] [100%] Built target lidar_to_grid
+[0.234s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment -- -j16 -l16
+[0.244s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment
+[0.271s] -- Install configuration: ""
+[0.310s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/oc_grid_pub
+[0.329s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/lidar_to_grid
+[0.329s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch
+[0.329s] -- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch/map_loading_2d.launch.py
+[0.329s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch/maze_tb3_bringup.launch.py
+[0.329s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//world
+[0.329s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//world/maze.world
+[0.330s] [31mCMake Error at cmake_install.cmake:86 (file):
+[0.330s]   file INSTALL cannot find
+[0.330s]   "/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment/map":
+[0.330s]   No such file or directory.
+[0.330s] 
+[0.330s] [0m
+[0.332s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment

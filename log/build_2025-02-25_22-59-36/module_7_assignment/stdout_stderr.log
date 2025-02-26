@@ -1,0 +1,52 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_7_assignment
+[35m[1mConsolidate compiler generated dependencies of target oc_grid_pub[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/lidar_to_grid.dir/src/lidar_to_grid.cpp.o[0m
+[ 75%] Built target oc_grid_pub
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment/src/lidar_to_grid.cpp:[m[K In member function ‘[01m[Kvoid LidarSub::Lidar_callback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment/src/lidar_to_grid.cpp:36:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<float>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   36 |                 for (int i = 0; [01;35m[Ki < msg->ranges.size()[m[K; i++) {
+      |                                 [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment/src/lidar_to_grid.cpp:47:51:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_width_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   47 |                         if (cell_x >= 0 && [01;35m[Kcell_x < map->info.width[m[K && cell_y >= 0 && cell_y < map->info.height) {
+      |                                            [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_7_assignment/src/lidar_to_grid.cpp:47:94:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Knav_msgs::msg::MapMetaData_<std::allocator<void> >::_height_type[m[K’ {aka ‘[01m[Kunsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   47 |                         if (cell_x >= 0 && cell_x < map->info.width && cell_y >= 0 && [01;35m[Kcell_y < map->info.height[m[K) {
+      |                                                                                       [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable lidar_to_grid[0m
+[100%] Built target lidar_to_grid
+-- Install configuration: ""
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/oc_grid_pub
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/lidar_to_grid
+-- Set runtime path of "/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/lidar_to_grid" to ""
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//worlds
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//map
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/ament_index/resource_index/package_run_dependencies/module_7_assignment
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/ament_index/resource_index/parent_prefix_path/module_7_assignment
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/environment/ament_prefix_path.sh
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/environment/path.sh
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/environment/path.dsv
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/local_setup.bash
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/local_setup.sh
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/local_setup.zsh
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/local_setup.dsv
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.dsv
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/ament_index/resource_index/packages/module_7_assignment
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/cmake/module_7_assignmentConfig.cmake
+-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/cmake/module_7_assignmentConfig-version.cmake
+-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/package.xml

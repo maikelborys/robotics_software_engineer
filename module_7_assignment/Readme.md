@@ -12,15 +12,39 @@ This assignment focuses on the practical application of SLAM (Simultaneous Local
 
   - **Subtasks:**
     1. **Set Up the Maze Environment:**
-       - Manually create a maze in Gazebo using the available tools.
-       - Ensure that the maze is complex enough to demonstrate the capabilities of the SLAM algorithm.
+         Lets create Maze map manually:
+            Open Gazebo empty world ros2 launch turtlebot3_gazebo empty_world.launch.py
+            Edit/Building Editor (Ctrl+B)
+            Draw a walls, put texture
+            File exit/save as/module_7_assignment project/Create models folder/save @maze@
+
+         We need to create launch file to bring our map at world with rviz, than build
+            colcon build --packages-select module_7_assignment
+         Try if its working properly:
+            ros2 launch module_7_assignment maze_tb3_bringup.launch.py 
 
     2. **Perform 2D Mapping:**
-       - Use the SLAM toolbox to generate a 2D map of the maze using TurtleBot3 equipped with a LIDAR sensor.
-       - Save the generated map and visualize it in RViz.
+         Install slam toolbox 
+            sudo apt-get install ros-humble-slam-toolbox
+         Launch turtle3 bot with our maze 
+            ros2 launch module_7_assignment maze_tb3_bringup.launch.py 
+         Launch slam_toolbox at new terminal
+            ros2 launch slam_toolbox online_async_launch.py
+         To vizualize at RVIZ
+            Fixed Frame - map
+            Add By topic/Map
+         Move the robot till we have a complete map
+            ros2 run teleop_twist_keyboard teleop_twist_keyboard
+
+         Save a map generated, at a new terminal run 
+            ~/assignment_ws/src/robotics_software_engineer/module_7_assignment/map_gens$ ros2 run nav2_map_server map_saver_cli -f maze_map
+
+         Load map 
+            ros2 launch module_7_assignment map_loading_2d.launch.py 
+
 
     3. **Document the Process:**
-       - Provide a step-by-step explanation of how you set up the maze, configured the SLAM toolbox, and generated the map.
+         Up 
 
 ### Task 2: Understand Inputs and Outputs for 2D and 3D Mapping
 
@@ -28,49 +52,56 @@ This assignment focuses on the practical application of SLAM (Simultaneous Local
 
   - **Subtasks:**
     1. **2D Mapping with SLAM Toolbox:**
-       - Identify and document the required inputs (e.g., LIDAR data, odometry) and outputs (e.g., map data, tf frames).
-       - Explain the role of each input and output in the mapping process.
+      Inputs:
+         LIDAR scans (/scan) – Provides range data.
+         Odometry (/odom) – Tracks movement.
+         TF transforms – Defines robot’s pose and frame relationships.
+      Outputs:
+         2D Occupancy Grid Map (/map) – Static environment representation.
+         TF Updates (map → odom → base_link) – Robot localization updates.
+
+      LIDAR scans combined with odometry refine robot’s pose and update the 2D occupancy grid.
+
+      ![Slam Toolbox Map gen](_GIFS/Assignment_Slam_Toolbox.gif)
 
     2. **3D Mapping with RTAB-Map:**
-       - Identify and document the required inputs (e.g., RGB-D camera data, odometry) and outputs (e.g., point clouds, 3D map data, tf frames).
-       - Explain how the inputs are processed and how the outputs are generated.
+      Inputs:
+         RGB-D / Stereo Camera (/camera/depth/image, /camera/rgb/image) – Captures depth + color.
+         LIDAR (optional) – Improves accuracy in large spaces.
+         IMU (optional) – Enhances motion tracking.
+         Odometry (/odom) – Estimates motion.
+      Outputs:
+         3D Point Cloud Map (/rtabmap/cloud_map) – Dense environment reconstruction.
+         2D Occupancy Grid (/rtabmap/proj_map) – Extracted from 3D data.
+         TF Frames (map → odom → base_link) – Tracks robot’s pose.
+
+      RGB-D or stereo images fused with odometry build a 3D point cloud. Loop closure refines maps.
 
     3. **Compare 2D and 3D Mapping:**
-       - Provide a comparison between 2D and 3D mapping in terms of complexity, accuracy, and the type of environments each is best suited for.
+      2D Mapping (SLAM Toolbox) uses LIDAR and odometry to create a flat map of the environment. It works well for robots moving on a flat surface, like indoors. It's fast and efficient but doesn’t capture height differences.
 
+      3D Mapping (RTAB-Map) uses cameras (RGB-D, stereo) or LIDAR to build a full 3D model of the space. It captures walls, objects, and elevation changes, making it more useful for complex environments. However, it needs more computing power and storage.
+
+      Which one to choose?
+
+         If your robot moves on the floor and just needs to navigate rooms, 2D mapping is enough.
+         If your robot needs to recognize objects, handle stairs, or move in a multi-level space, 3D mapping is better.
+
+      ![RTAB Map](_GIFS/Rtab-Map.gif)
+         
 ### Task 3: Explain the Mapping Algorithm (Gmapping)
 
-- **Objective:** Explain in simple terms how the Gmapping algorithm works for creating maps.
+   Gmapping is a 2D SLAM algorithm that helps a robot build a map while figuring out where it is. It uses LIDAR and odometry to update its position and surroundings.
 
-  - **Subtasks:**
-    1. **Simplified Explanation:**
-       - Write a brief explanation of the Gmapping algorithm, focusing on the key concepts such as particle filters, map updating, and handling sensor noise.
+   Particle Filters: The robot guesses its location using many possibilities and picks the best fit based on laser scans.
+   Map Updating: The robot gradually fills in the map as it moves.
+   Handling Sensor Noise: It filters out errors from LIDAR to keep the map accurate.
+   When running Gmapping, the robot scans, updates its position, and creates a reliable 2D map for navigation. 🚀
 
-    2. **Relate to Practical Application:**
-       - Relate your explanation to the practical steps you took in Task 1 to create the 2D LIDAR-based map.
-       - Highlight how Gmapping contributes to building an accurate and reliable map.
----
-## Submission Process
+   In Task 1, we was used LIDAR and odometry to create a 2D map. Gmapping processes this data to estimate the robot’s position and refine the map.
 
-1. **Create Files:**
-   - Navigate to the `module_7_assignment` package.
-   - Create the required files for the maze setup, SLAM configuration, and documentation.
+   LIDAR scans detect walls and objects.
+   Odometry provides movement data (but has small errors
+   Gmapping corrects these errors by comparing past and new scans, updating the map step by step.
+   This ensures the map is accurate, letting the robot navigate correctly in known spaces. 🚀
 
-2. **Document Your Work:**
-   - Create a `README.md` file in the `module_7_assignment` package.
-   - Provide details about the files you created, including explanations of the setup process, inputs/outputs for SLAM, and the Gmapping algorithm.
-
-3. **Submit Your Assignment:**
-   - Push your changes to your forked repository.
-   - Provide your repository link in the assignment submission text area.
-   - **Note**: Ensure you press the "Start Assignment" button when you see the page (as it takes time to generate the pages).
-
-4. **Wait for Review:**
-   - Wait for the instructors to review your submission.
-
-## Learning Outcome
-
-By completing this assignment, you will:
-- Gain hands-on experience with creating maps using 2D LIDAR and 3D RGB-D sensors.
-- Understand the necessary inputs and outputs for successful mapping in both 2D and 3D environments.
-- Develop the ability to explain mapping algorithms like Gmapping in simple terms and relate them to practical applications.

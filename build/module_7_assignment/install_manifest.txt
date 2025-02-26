@@ -1,3 +1,10 @@
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/oc_grid_pub
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/lib/module_7_assignment/lidar_to_grid
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch/map_loading_2d.launch.py
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//launch/maze_tb3_bringup.launch.py
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//world/maze.world
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//map_gens/maze_map.yaml
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment//map_gens/maze_map.pgm
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/ament_index/resource_index/package_run_dependencies/module_7_assignment
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/ament_index/resource_index/parent_prefix_path/module_7_assignment
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment/share/module_7_assignment/environment/ament_prefix_path.sh
