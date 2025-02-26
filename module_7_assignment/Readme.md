@@ -1,16 +1,8 @@
 # Module 7 Assignment: ROS 2 Mapping with SLAM
 
-## Objective
-
-This assignment focuses on the practical application of SLAM (Simultaneous Localization and Mapping) in ROS 2. You will create a 2D LIDAR-based map, explore the necessary inputs and outputs for 2D and 3D mapping tools, and explain the mapping algorithms in your own words.
-
-## Tasks
 
 ### Task 1: Create a 2D LIDAR-Based Map
 
-- **Objective:** Using the knowledge gained from the lectures, manually create a maze in Gazebo and generate a 2D map using a LIDAR sensor and the SLAM toolbox.
-
-  - **Subtasks:**
     1. **Set Up the Maze Environment:**
          Lets create Maze map manually:
             Open Gazebo empty world ros2 launch turtlebot3_gazebo empty_world.launch.py
@@ -48,9 +40,6 @@ This assignment focuses on the practical application of SLAM (Simultaneous Local
 
 ### Task 2: Understand Inputs and Outputs for 2D and 3D Mapping
 
-- **Objective:** Explore and document the necessary inputs, outputs, and frames required for both 2D and 3D mapping using the SLAM toolbox and the RTAB-Map package.
-
-  - **Subtasks:**
     1. **2D Mapping with SLAM Toolbox:**
       Inputs:
          LIDAR scans (/scan) – Provides range data.
