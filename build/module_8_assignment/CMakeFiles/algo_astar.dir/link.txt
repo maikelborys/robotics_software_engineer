@@ -1,0 +1,2 @@
+/usr/bin/ar qc libalgo_astar.a CMakeFiles/algo_astar.dir/src/algo_astar.cpp.o
+/usr/bin/ranlib libalgo_astar.a

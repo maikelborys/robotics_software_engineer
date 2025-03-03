@@ -1,0 +1,29 @@
+[ 27%] Built target rrt_node
+[ 27%] Built target gtest_main
+[ 27%] Built target algo_grid_sweep
+[ 36%] Built target algo_astar
+[ 45%] Built target gtest
+[ 54%] Built target map_republisher_node
+[ 63%] Built target occupancy_grid_node
+[ 77%] Built target test_rrt_node
+[ 77%] [32mBuilding CXX object CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o[0m
+[ 81%] [32m[1mLinking CXX static library libalgo_rrt.a[0m
+[ 81%] Built target algo_rrt
+[35m[1mConsolidate compiler generated dependencies of target test_rrt[0m
+[35m[1mConsolidate compiler generated dependencies of target path_planning_node[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/test_rrt.dir/test/test_rrt.cpp.o[0m
+[ 90%] [32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable test_rrt[0m
+[ 95%] Built target test_rrt
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:[m[K In member function ‘[01m[Kvoid PathPlanning::occupancyGridCallback(const OccupancyGrid&)[m[K’:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:44:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(const _width_type&, const _height_type&, std::vector<signed char, std::allocator<signed char> >&)[m[K’
+   44 |       [01;31m[Kplanner.setDomain(grid.info.width, grid.info.height, domain)[m[K;
+      |       [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:6[m[K:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+   16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+gmake[2]: *** [CMakeFiles/path_planning_node.dir/build.make:76: CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:304: CMakeFiles/path_planning_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

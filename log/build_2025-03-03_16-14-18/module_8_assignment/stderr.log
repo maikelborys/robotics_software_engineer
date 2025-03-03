@@ -1,0 +1,43 @@
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:12:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid RRT_Planner::setDomain(int, int, const std::vector<signed char>&)[m[K’
+   12 | void [01;31m[KRRT_Planner[m[K::setDomain(int width, int height, const std::vector<int8_t>& occupancy_data) {
+      |      [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:1[m[K:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+   16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+      |          [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:10:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass RRT_Planner[m[K’ defined here
+   10 | class [01;36m[KRRT_Planner[m[K {
+      |       [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:[m[K In member function ‘[01m[KNodeRrt RRT_Planner::generateRandomNode(std::mt19937&)[m[K’:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:20:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth_[m[K’ was not declared in this scope
+   20 |   std::uniform_int_distribution<int> distribution(0, [01;31m[Kwidth_[m[K * height_ - 1);
+      |                                                      [01;31m[K^~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:20:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight_[m[K’ was not declared in this scope
+   20 |   std::uniform_int_distribution<int> distribution(0, width_ * [01;31m[Kheight_[m[K - 1);
+      |                                                               [01;31m[K^~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:[m[K In member function ‘[01m[Kbool RRT_Planner::isObstacle(const NodeRrt&, const NodeRrt&)[m[K’:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:59:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth_[m[K’ was not declared in this scope
+   59 |   if (newNode.getX() < 0 || newNode.getX() >= [01;31m[Kwidth_[m[K || newNode.getY() < 0 || newNode.getY() >= height_) {
+      |                                               [01;31m[K^~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:59:97:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight_[m[K’ was not declared in this scope
+   59 |   if (newNode.getX() < 0 || newNode.getX() >= width_ || newNode.getY() < 0 || newNode.getY() >= [01;31m[Kheight_[m[K) {
+      |                                                                                                 [01;31m[K^~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:64:7:[m[K [01;31m[Kerror: [m[K‘[01m[Koccupancy_data_[m[K’ was not declared in this scope
+   64 |   if ([01;31m[Koccupancy_data_[m[K[newNode.getY() * width_ + newNode.getX()] == 100) {
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:64:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth_[m[K’ was not declared in this scope
+   64 |   if (occupancy_data_[newNode.getY() * [01;31m[Kwidth_[m[K + newNode.getX()] == 100) {
+      |                                        [01;31m[K^~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:77:9:[m[K [01;31m[Kerror: [m[K‘[01m[Koccupancy_data_[m[K’ was not declared in this scope
+   77 |     if ([01;31m[Koccupancy_data_[m[K[static_cast<int>(y) * width_ + static_cast<int>(x)] == 100) {
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:77:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth_[m[K’ was not declared in this scope
+   77 |     if (occupancy_data_[static_cast<int>(y) * [01;31m[Kwidth_[m[K + static_cast<int>(x)] == 100) {
+      |                                               [01;31m[K^~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:[m[K In static member function ‘[01m[Kstatic NodeRrt RRT_Planner::indexToCoordinate(int)[m[K’:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:91:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth_[m[K’ was not declared in this scope
+   91 |   int x = index % [01;31m[Kwidth_[m[K;
+      |                   [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/algo_rrt.dir/build.make:76: CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:275: CMakeFiles/algo_rrt.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

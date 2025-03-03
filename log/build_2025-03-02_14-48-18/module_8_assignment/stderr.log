@@ -1,0 +1,20 @@
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt_node.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kalgo_rrt_node.hpp: No such file or directory
+    1 | #include [01;31m[K<algo_rrt_node.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_astar.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kalgo_astar.h: No such file or directory
+    1 | #include [01;31m[K"algo_astar.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~[m[K
+compilation terminated.
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_gridsweep.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Kalgo_gridsweep.h: No such file or directory
+    1 | #include [01;31m[K"algo_gridsweep.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rrt_node.dir/build.make:76: CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:247: CMakeFiles/rrt_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/algo_astar.dir/build.make:76: CMakeFiles/algo_astar.dir/src/algo_astar.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/algo_astar.dir/all] Error 2
+gmake[2]: *** [CMakeFiles/algo_grid_sweep.dir/build.make:76: CMakeFiles/algo_grid_sweep.dir/src/algo_gridsweep.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:195: CMakeFiles/algo_grid_sweep.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

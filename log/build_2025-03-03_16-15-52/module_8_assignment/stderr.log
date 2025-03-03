@@ -1,0 +1,18 @@
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:[m[K In static member function ‘[01m[Kstatic NodeRrt RRT_Planner::indexToCoordinate(int)[m[K’:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:91:19:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KRRT_Planner::width_[m[K’ in static member function
+   91 |   int x = index % [01;31m[Kwidth_[m[K;
+      |                   [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:1[m[K:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:29:9:[m[K [01;36m[Knote: [m[Kdeclared here
+   29 |     int [01;36m[Kwidth_[m[K;
+      |         [01;36m[K^~~~~~[m[K
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:92:19:[m[K [01;31m[Kerror: [m[Kinvalid use of member ‘[01m[KRRT_Planner::width_[m[K’ in static member function
+   92 |   int y = index / [01;31m[Kwidth_[m[K;
+      |                   [01;31m[K^~~~~~[m[K
+In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp:1[m[K:
+[01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:29:9:[m[K [01;36m[Knote: [m[Kdeclared here
+   29 |     int [01;36m[Kwidth_[m[K;
+      |         [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/algo_rrt.dir/build.make:76: CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:275: CMakeFiles/algo_rrt.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

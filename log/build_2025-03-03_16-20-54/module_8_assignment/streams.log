@@ -1,0 +1,14 @@
+[0.012s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[0.064s] [  4%] [32mBuilding CXX object CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o[0m
+[0.064s] [ 22%] Built target algo_astar
+[0.064s] [ 22%] Built target algo_grid_sweep
+[0.065s] [ 31%] Built target gtest_main
+[0.066s] [ 40%] Built target gtest
+[0.066s] [ 50%] Built target map_republisher_node
+[0.067s] [ 59%] Built target occupancy_grid_node
+[0.069s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt_node.cpp: No such file or directory
+[0.069s] compilation terminated.
+[0.070s] gmake[2]: *** [CMakeFiles/rrt_node.dir/build.make:76: CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o] Error 1
+[0.070s] gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/rrt_node.dir/all] Error 2
+[0.070s] gmake: *** [Makefile:146: all] Error 2
+[0.073s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16

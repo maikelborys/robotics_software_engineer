@@ -1,0 +1,40 @@
+[0.082s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[0.274s] [ 22%] Built target gtest
+[0.275s] [ 22%] Built target rrt_node
+[0.275s] [ 33%] Built target algo_astar
+[0.275s] [ 44%] Built target gtest_main
+[0.279s] [ 55%] Built target algo_grid_sweep
+[0.319s] [ 66%] Built target test_rrt_node
+[0.330s] [ 77%] Built target algo_rrt
+[0.368s] [ 88%] Built target test_rrt
+[0.375s] [35m[1mConsolidate compiler generated dependencies of target path_planning_node[0m
+[0.398s] [ 94%] [32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o[0m
+[8.068s] [100%] [32m[1mLinking CXX executable path_planning_node[0m
+[9.168s] [100%] Built target path_planning_node
+[9.193s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[9.217s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment
+[9.227s] -- Install configuration: ""
+[9.227s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch
+[9.227s] -- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch/path_plan_rviz.launch.py
+[9.239s] -- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch/map_loading_2d.launch.py
+[9.247s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch/maze_tb3_bringup.launch.py
+[9.247s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/config
+[9.247s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/config/search_path_planning.rviz
+[9.260s] -- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/module_8_assignment/path_planning_node
+[9.266s] -- Set runtime path of "/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/module_8_assignment/path_planning_node" to ""
+[9.279s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/ament_index/resource_index/package_run_dependencies/module_8_assignment
+[9.279s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/ament_index/resource_index/parent_prefix_path/module_8_assignment
+[9.279s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/ament_prefix_path.sh
+[9.284s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/ament_prefix_path.dsv
+[9.285s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/path.sh
+[9.285s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/path.dsv
+[9.285s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.bash
+[9.285s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.sh
+[9.285s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.zsh
+[9.285s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.dsv
+[9.285s] -- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.dsv
+[9.286s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/ament_index/resource_index/packages/module_8_assignment
+[9.286s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/cmake/module_8_assignmentConfig.cmake
+[9.286s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/cmake/module_8_assignmentConfig-version.cmake
+[9.287s] -- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.xml
+[9.302s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment

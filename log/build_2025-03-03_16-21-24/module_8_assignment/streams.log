@@ -1,0 +1,22 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[0.065s] [ 27%] Built target algo_astar
+[0.066s] [ 31%] Built target gtest_main
+[0.066s] [ 27%] [32mBuilding CXX object CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o[0m
+[0.066s] [ 31%] Built target algo_grid_sweep
+[0.066s] [ 40%] Built target gtest
+[0.067s] [ 59%] Built target map_republisher_node
+[0.068s] [ 59%] Built target occupancy_grid_node
+[0.274s] [ 63%] [32m[1mLinking CXX static library librrt_node.a[0m
+[0.339s] [ 63%] Built target rrt_node
+[0.352s] [35m[1mConsolidate compiler generated dependencies of target algo_rrt[0m
+[0.365s] [ 68%] [32mBuilding CXX object CMakeFiles/test_rrt_node.dir/test/test_rrt_node.cpp.o[0m
+[0.371s] [ 72%] [32mBuilding CXX object CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o[0m
+[0.376s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt.cpp: No such file or directory
+[0.376s] compilation terminated.
+[0.376s] gmake[2]: *** [CMakeFiles/algo_rrt.dir/build.make:76: CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o] Error 1
+[0.376s] gmake[1]: *** [CMakeFiles/Makefile2:275: CMakeFiles/algo_rrt.dir/all] Error 2
+[0.377s] gmake[1]: *** Waiting for unfinished jobs....
+[1.149s] [ 77%] [32m[1mLinking CXX executable test_rrt_node[0m
+[1.267s] [ 77%] Built target test_rrt_node
+[1.269s] gmake: *** [Makefile:146: all] Error 2
+[1.273s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16

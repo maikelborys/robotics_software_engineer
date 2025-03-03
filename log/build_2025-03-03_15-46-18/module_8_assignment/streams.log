@@ -1,0 +1,82 @@
+[0.012s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[0.064s] [  9%] Built target algo_grid_sweep
+[0.065s] [ 13%] [32mBuilding CXX object CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o[0m
+[0.065s] [ 27%] Built target gtest_main
+[0.065s] [ 31%] Built target algo_astar
+[0.065s] [ 40%] Built target gtest
+[0.066s] [ 50%] Built target occupancy_grid_node
+[0.071s] [ 59%] Built target map_republisher_node
+[0.286s] [ 63%] [32m[1mLinking CXX static library librrt_node.a[0m
+[0.356s] [ 63%] Built target rrt_node
+[0.368s] [35m[1mConsolidate compiler generated dependencies of target algo_rrt[0m
+[0.380s] [ 68%] [32mBuilding CXX object CMakeFiles/test_rrt_node.dir/test/test_rrt_node.cpp.o[0m
+[0.381s] [ 72%] [32mBuilding CXX object CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o[0m
+[0.868s] [ 77%] [32m[1mLinking CXX static library libalgo_rrt.a[0m
+[0.943s] [ 77%] Built target algo_rrt
+[0.955s] [35m[1mConsolidate compiler generated dependencies of target test_rrt[0m
+[0.956s] [35m[1mConsolidate compiler generated dependencies of target path_planning_node[0m
+[0.971s] [ 81%] [32mBuilding CXX object CMakeFiles/test_rrt.dir/test/test_rrt.cpp.o[0m
+[0.975s] [ 86%] [32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o[0m
+[1.209s] [ 90%] [32m[1mLinking CXX executable test_rrt_node[0m
+[1.348s] [ 90%] Built target test_rrt_node
+[1.699s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:[m[K In member function ‘[01m[Kvirtual void RRTPlannerTest::SetUp()[m[K’:
+[1.699s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:20:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(int&, int&, std::vector<signed char>&)[m[K’
+[1.699s]    20 |         [01;31m[Kplanner.setDomain(width, height, domain)[m[K;
+[1.699s]       |         [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.699s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2[m[K:
+[1.700s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+[1.700s]    16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+[1.700s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.700s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[1.706s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:[m[K In member function ‘[01m[Kvirtual void RRTPlannerTest_PlanPath_Test::TestBody()[m[K’:
+[1.706s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:80:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(int, int, std::vector<signed char>&)[m[K’
+[1.707s]    80 |     [01;31m[Kplanner.setDomain(20, 20, domain)[m[K;
+[1.707s]       |     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.707s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2[m[K:
+[1.707s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+[1.707s]    16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+[1.707s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.707s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[1.707s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:[m[K In member function ‘[01m[Kvirtual void RRTPlannerTest_PathValidity_Test::TestBody()[m[K’:
+[1.708s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:97:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(int, int, std::vector<signed char>&)[m[K’
+[1.708s]    97 |     [01;31m[Kplanner.setDomain(20, 20, domain)[m[K;
+[1.708s]       |     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.708s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2[m[K:
+[1.708s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+[1.708s]    16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+[1.708s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.708s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[1.709s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:[m[K In member function ‘[01m[Kvirtual void RRTPlannerTest_NoPathFound_Test::TestBody()[m[K’:
+[1.709s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:112:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(int, int, std::vector<signed char>&)[m[K’
+[1.709s]   112 |     [01;31m[Kplanner.setDomain(20, 20, domain)[m[K;
+[1.709s]       |     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.709s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2[m[K:
+[1.709s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+[1.710s]    16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+[1.710s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.710s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[1.710s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:[m[K In member function ‘[01m[Kvirtual void RRTPlannerTest_CorrectParentAssignment_Test::TestBody()[m[K’:
+[1.710s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:123:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(int, int, std::vector<signed char>&)[m[K’
+[1.710s]   123 |     [01;31m[Kplanner.setDomain(20, 20, domain)[m[K;
+[1.710s]       |     [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[1.710s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2[m[K:
+[1.710s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+[1.710s]    16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+[1.710s]       |          [01;36m[K^~~~~~~~~[m[K
+[1.711s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[1.853s] gmake[2]: *** [CMakeFiles/test_rrt.dir/build.make:76: CMakeFiles/test_rrt.dir/test/test_rrt.cpp.o] Error 1
+[1.854s] gmake[1]: *** [CMakeFiles/Makefile2:387: CMakeFiles/test_rrt.dir/all] Error 2
+[1.854s] gmake[1]: *** Waiting for unfinished jobs....
+[2.890s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:[m[K In member function ‘[01m[Kvoid PathPlanning::occupancyGridCallback(const OccupancyGrid&)[m[K’:
+[2.890s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:51:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(const _width_type&, const _height_type&, const _data_type&)[m[K’
+[2.890s]    51 |         [01;31m[Kplanner.setDomain(grid.info.width, grid.info.height, grid.data)[m[K;
+[2.890s]       |         [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.890s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:6[m[K:
+[2.890s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+[2.890s]    16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+[2.890s]       |          [01;36m[K^~~~~~~~~[m[K
+[2.891s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[4.853s] gmake[2]: *** [CMakeFiles/path_planning_node.dir/build.make:76: CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o] Error 1
+[4.853s] gmake[1]: *** [CMakeFiles/Makefile2:304: CMakeFiles/path_planning_node.dir/all] Error 2
+[4.853s] gmake: *** [Makefile:146: all] Error 2
+[4.857s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16

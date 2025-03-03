@@ -1,0 +1,202 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c73c36341bf534b7e281.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"build" : "gtest",
+					"jsonFile" : "directory-gtest-a2408fe1a73b92c5e636.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/opt/ros/humble/src/gtest_vendor",
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "module_8_assignment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "gtest",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "algo_astar::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-algo_astar-008ee8d3871d479f56ed.json",
+					"name" : "algo_astar",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "algo_grid_sweep::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-algo_grid_sweep-378f8a580d6ec8004ad7.json",
+					"name" : "algo_grid_sweep",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "algo_rrt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-algo_rrt-562091973add3c60fed0.json",
+					"name" : "algo_rrt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest-ff5f2700ce5dffdcb0ce.json",
+					"name" : "gtest",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "gtest_main::@0af4add9fe94340e763e",
+					"jsonFile" : "target-gtest_main-08fdf0b1438d466993c4.json",
+					"name" : "gtest_main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_republisher_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_republisher_node-d94fedabc85fea51fee0.json",
+					"name" : "map_republisher_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_8_assignment_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_8_assignment_uninstall-12cfb30b7035303e4e88.json",
+					"name" : "module_8_assignment_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "occupancy_grid_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-occupancy_grid_node-70d89e6908eaa46b92fc.json",
+					"name" : "occupancy_grid_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "path_planning_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-path_planning_node-5b910d880488554dec4d.json",
+					"name" : "path_planning_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "rrt_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-rrt_node-2a2462c047cbc2988a14.json",
+					"name" : "rrt_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_rrt::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_rrt-9d35ac9edc57ca90960a.json",
+					"name" : "test_rrt",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_rrt_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_rrt_node-e5fbf79f31d4195663b3.json",
+					"name" : "test_rrt_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-663215d4dedcbe6a5fea.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment",
+		"source" : "/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

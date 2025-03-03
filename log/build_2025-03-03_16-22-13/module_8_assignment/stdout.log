@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target rrt_node[0m
+[ 22%] Built target algo_astar
+[ 22%] Built target gtest_main
+[ 27%] Built target algo_grid_sweep
+[ 45%] Built target rrt_node
+[ 45%] Built target gtest
+[ 63%] Built target map_republisher_node
+[ 63%] Built target occupancy_grid_node
+[35m[1mConsolidate compiler generated dependencies of target test_rrt_node[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o[0m
+[ 77%] Built target test_rrt_node

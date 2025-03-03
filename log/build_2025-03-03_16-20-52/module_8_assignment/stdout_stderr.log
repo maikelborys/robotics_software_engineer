@@ -1,0 +1,12 @@
+[  9%] [32mBuilding CXX object CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o[0m
+[ 13%] Built target algo_astar
+[ 22%] Built target algo_grid_sweep
+[ 31%] Built target gtest_main
+[ 40%] Built target gtest
+[ 50%] Built target occupancy_grid_node
+[ 59%] Built target map_republisher_node
+[01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/algo_rrt_node.cpp: No such file or directory
+compilation terminated.
+gmake[2]: *** [CMakeFiles/rrt_node.dir/build.make:76: CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:249: CMakeFiles/rrt_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

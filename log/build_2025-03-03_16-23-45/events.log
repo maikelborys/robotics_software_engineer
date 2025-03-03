@@ -1,0 +1,137 @@
+[0.000000] (-) TimerEvent: {}
+[0.000744] (-) JobUnselected: {'identifier': 'module_1_assignment'}
+[0.000807] (-) JobUnselected: {'identifier': 'module_2_assignment'}
+[0.000899] (-) JobUnselected: {'identifier': 'module_3_assignment'}
+[0.000926] (-) JobUnselected: {'identifier': 'module_4_assignment'}
+[0.000955] (-) JobUnselected: {'identifier': 'module_5_assignment'}
+[0.000988] (-) JobUnselected: {'identifier': 'module_6_assignment'}
+[0.001013] (-) JobUnselected: {'identifier': 'module_7_assignment'}
+[0.001058] (module_8_assignment) JobQueued: {'identifier': 'module_8_assignment', 'dependencies': OrderedDict()}
+[0.001076] (module_8_assignment) JobStarted: {'identifier': 'module_8_assignment'}
+[0.009651] (module_8_assignment) JobProgress: {'identifier': 'module_8_assignment', 'progress': 'cmake'}
+[0.010191] (module_8_assignment) JobProgress: {'identifier': 'module_8_assignment', 'progress': 'build'}
+[0.010911] (module_8_assignment) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment', '--', '-j16', '-l16'], 'cwd': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maikelborys'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maikelborys/ros2_ws/install/ros2_kitti_publishers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maikelborys'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/maikelborys/assignment_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1249'), ('SYSTEMD_EXEC_PID', '2047'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8426'), ('COLCON_PREFIX_PATH', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install:/home/maikelborys/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maikelborys'), ('JOURNAL_STREAM', '8:40148'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maikelborys'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maikelborys/miniconda3/condabin:/opt/ros/humble/bin:/home/maikelborys/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maikelborys-A520-AORUS-ELITE:@/tmp/.ICE-unix/1985,unix/maikelborys-A520-AORUS-ELITE:/tmp/.ICE-unix/1985'), ('INVOCATION_ID', 'cae41b54d21b44b7b36ba8bc095b1f75'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maikelborys/ros2_ws/install/mapping:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/maikelborys/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:514b5e31-abc1-4c80-b995-6cfa508150ff'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/maikelborys/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maikelborys/ros2_ws/install/mapping:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble')]), 'shell': False}
+[0.071307] (module_8_assignment) StdoutLine: {'line': b'[ 18%] Built target algo_astar\n'}
+[0.071551] (module_8_assignment) StdoutLine: {'line': b'[ 18%] Built target rrt_node\n'}
+[0.071697] (module_8_assignment) StdoutLine: {'line': b'[ 27%] Built target algo_grid_sweep\n'}
+[0.072202] (module_8_assignment) StdoutLine: {'line': b'[ 36%] Built target map_republisher_node\n'}
+[0.072399] (module_8_assignment) StdoutLine: {'line': b'[ 63%] Built target occupancy_grid_node\n'}
+[0.072463] (module_8_assignment) StdoutLine: {'line': b'[ 63%] Built target gtest\n'}
+[0.072746] (module_8_assignment) StdoutLine: {'line': b'[ 63%] Built target gtest_main\n'}
+[0.084471] (module_8_assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target algo_rrt\x1b[0m\n'}
+[0.096792] (module_8_assignment) StdoutLine: {'line': b'[ 72%] Built target test_rrt_node\n'}
+[0.098921] (module_8_assignment) StdoutLine: {'line': b'[ 81%] Built target algo_rrt\n'}
+[0.099689] (-) TimerEvent: {}
+[0.111174] (module_8_assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_rrt\x1b[0m\n'}
+[0.111789] (module_8_assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target path_planning_node\x1b[0m\n'}
+[0.126819] (module_8_assignment) StdoutLine: {'line': b'[ 90%] Built target test_rrt\n'}
+[0.131029] (module_8_assignment) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o\x1b[0m\n'}
+[0.199821] (-) TimerEvent: {}
+[0.300148] (-) TimerEvent: {}
+[0.400457] (-) TimerEvent: {}
+[0.500791] (-) TimerEvent: {}
+[0.601105] (-) TimerEvent: {}
+[0.701428] (-) TimerEvent: {}
+[0.801765] (-) TimerEvent: {}
+[0.902091] (-) TimerEvent: {}
+[1.002410] (-) TimerEvent: {}
+[1.102748] (-) TimerEvent: {}
+[1.203073] (-) TimerEvent: {}
+[1.303393] (-) TimerEvent: {}
+[1.403729] (-) TimerEvent: {}
+[1.504052] (-) TimerEvent: {}
+[1.604395] (-) TimerEvent: {}
+[1.704748] (-) TimerEvent: {}
+[1.805079] (-) TimerEvent: {}
+[1.905413] (-) TimerEvent: {}
+[2.005760] (-) TimerEvent: {}
+[2.106099] (-) TimerEvent: {}
+[2.206437] (-) TimerEvent: {}
+[2.306789] (-) TimerEvent: {}
+[2.407115] (-) TimerEvent: {}
+[2.507453] (-) TimerEvent: {}
+[2.607819] (-) TimerEvent: {}
+[2.708150] (-) TimerEvent: {}
+[2.808492] (-) TimerEvent: {}
+[2.908825] (-) TimerEvent: {}
+[3.009206] (-) TimerEvent: {}
+[3.109578] (-) TimerEvent: {}
+[3.209919] (-) TimerEvent: {}
+[3.310242] (-) TimerEvent: {}
+[3.410582] (-) TimerEvent: {}
+[3.510910] (-) TimerEvent: {}
+[3.611227] (-) TimerEvent: {}
+[3.711532] (-) TimerEvent: {}
+[3.811863] (-) TimerEvent: {}
+[3.912234] (-) TimerEvent: {}
+[4.012554] (-) TimerEvent: {}
+[4.112915] (-) TimerEvent: {}
+[4.213257] (-) TimerEvent: {}
+[4.313573] (-) TimerEvent: {}
+[4.413888] (-) TimerEvent: {}
+[4.514199] (-) TimerEvent: {}
+[4.614536] (-) TimerEvent: {}
+[4.714869] (-) TimerEvent: {}
+[4.815183] (-) TimerEvent: {}
+[4.915497] (-) TimerEvent: {}
+[5.015794] (-) TimerEvent: {}
+[5.116096] (-) TimerEvent: {}
+[5.216391] (-) TimerEvent: {}
+[5.316709] (-) TimerEvent: {}
+[5.417004] (-) TimerEvent: {}
+[5.517292] (-) TimerEvent: {}
+[5.617574] (-) TimerEvent: {}
+[5.717862] (-) TimerEvent: {}
+[5.818169] (-) TimerEvent: {}
+[5.918484] (-) TimerEvent: {}
+[6.018740] (-) TimerEvent: {}
+[6.118998] (-) TimerEvent: {}
+[6.219275] (-) TimerEvent: {}
+[6.319554] (-) TimerEvent: {}
+[6.419847] (-) TimerEvent: {}
+[6.520110] (-) TimerEvent: {}
+[6.620392] (-) TimerEvent: {}
+[6.720769] (-) TimerEvent: {}
+[6.794559] (module_8_assignment) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable path_planning_node\x1b[0m\n'}
+[6.820874] (-) TimerEvent: {}
+[6.921186] (-) TimerEvent: {}
+[7.021542] (-) TimerEvent: {}
+[7.121904] (-) TimerEvent: {}
+[7.134092] (module_8_assignment) StdoutLine: {'line': b'[100%] Built target path_planning_node\n'}
+[7.146848] (module_8_assignment) CommandEnded: {'returncode': 0}
+[7.147823] (module_8_assignment) JobProgress: {'identifier': 'module_8_assignment', 'progress': 'install'}
+[7.158174] (module_8_assignment) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment'], 'cwd': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maikelborys'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maikelborys/ros2_ws/install/ros2_kitti_publishers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maikelborys'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/maikelborys/assignment_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1249'), ('SYSTEMD_EXEC_PID', '2047'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8426'), ('COLCON_PREFIX_PATH', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install:/home/maikelborys/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maikelborys'), ('JOURNAL_STREAM', '8:40148'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maikelborys'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maikelborys/miniconda3/condabin:/opt/ros/humble/bin:/home/maikelborys/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maikelborys-A520-AORUS-ELITE:@/tmp/.ICE-unix/1985,unix/maikelborys-A520-AORUS-ELITE:/tmp/.ICE-unix/1985'), ('INVOCATION_ID', 'cae41b54d21b44b7b36ba8bc095b1f75'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maikelborys/ros2_ws/install/mapping:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/maikelborys/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:514b5e31-abc1-4c80-b995-6cfa508150ff'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/maikelborys/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maikelborys/ros2_ws/install/mapping:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble')]), 'shell': False}
+[7.165064] (module_8_assignment) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.165294] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch\n'}
+[7.165436] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch/path_plan_rviz.launch.py\n'}
+[7.165558] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch/map_loading_2d.launch.py\n'}
+[7.165684] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/launch/maze_tb3_bringup.launch.py\n'}
+[7.165785] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/config\n'}
+[7.165941] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/config/search_path_planning.rviz\n'}
+[7.166045] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/world\n'}
+[7.166141] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/world/maze.world\n'}
+[7.166236] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/map_gens\n'}
+[7.166331] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/map_gens/maze_map.yaml\n'}
+[7.166425] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/map_gens/maze_map.pgm\n'}
+[7.166539] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/module_8_assignment/occupancy_grid_node\n'}
+[7.166640] (module_8_assignment) StdoutLine: {'line': b'-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/module_8_assignment/path_planning_node\n'}
+[7.170578] (module_8_assignment) StdoutLine: {'line': b'-- Set runtime path of "/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/module_8_assignment/path_planning_node" to ""\n'}
+[7.170789] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/lib/module_8_assignment/map_republisher_node\n'}
+[7.170929] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/ament_index/resource_index/package_run_dependencies/module_8_assignment\n'}
+[7.171101] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/ament_index/resource_index/parent_prefix_path/module_8_assignment\n'}
+[7.171211] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/ament_prefix_path.sh\n'}
+[7.171316] (module_8_assignment) StdoutLine: {'line': b'-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/ament_prefix_path.dsv\n'}
+[7.171505] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/path.sh\n'}
+[7.171656] (module_8_assignment) StdoutLine: {'line': b'-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/environment/path.dsv\n'}
+[7.171756] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.bash\n'}
+[7.171941] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.sh\n'}
+[7.172040] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.zsh\n'}
+[7.172136] (module_8_assignment) StdoutLine: {'line': b'-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/local_setup.dsv\n'}
+[7.172231] (module_8_assignment) StdoutLine: {'line': b'-- Installing: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.dsv\n'}
+[7.172326] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/ament_index/resource_index/packages/module_8_assignment\n'}
+[7.172421] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/cmake/module_8_assignmentConfig.cmake\n'}
+[7.172535] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/cmake/module_8_assignmentConfig-version.cmake\n'}
+[7.172636] (module_8_assignment) StdoutLine: {'line': b'-- Up-to-date: /home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment/share/module_8_assignment/package.xml\n'}
+[7.174331] (module_8_assignment) CommandEnded: {'returncode': 0}
+[7.197193] (module_8_assignment) JobEnded: {'identifier': 'module_8_assignment', 'rc': 0}
+[7.198047] (-) EventReactorShutdown: {}

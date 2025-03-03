@@ -1,0 +1,31 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[0.067s] [ 27%] Built target rrt_node
+[0.067s] [ 27%] Built target gtest_main
+[0.067s] [ 27%] Built target algo_grid_sweep
+[0.069s] [ 36%] Built target algo_astar
+[0.070s] [ 45%] Built target gtest
+[0.072s] [ 54%] Built target map_republisher_node
+[0.072s] [ 63%] Built target occupancy_grid_node
+[0.094s] [ 77%] Built target test_rrt_node
+[0.094s] [ 77%] [32mBuilding CXX object CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o[0m
+[0.611s] [ 81%] [32m[1mLinking CXX static library libalgo_rrt.a[0m
+[0.681s] [ 81%] Built target algo_rrt
+[0.693s] [35m[1mConsolidate compiler generated dependencies of target test_rrt[0m
+[0.694s] [35m[1mConsolidate compiler generated dependencies of target path_planning_node[0m
+[0.710s] [ 86%] [32mBuilding CXX object CMakeFiles/test_rrt.dir/test/test_rrt.cpp.o[0m
+[0.711s] [ 90%] [32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o[0m
+[1.770s] [ 95%] [32m[1mLinking CXX executable test_rrt[0m
+[1.930s] [ 95%] Built target test_rrt
+[2.589s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:[m[K In member function ‘[01m[Kvoid PathPlanning::occupancyGridCallback(const OccupancyGrid&)[m[K’:
+[2.589s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:44:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KRRT_Planner::setDomain(const _width_type&, const _height_type&, std::vector<signed char, std::allocator<signed char> >&)[m[K’
+[2.589s]    44 |       [01;31m[Kplanner.setDomain(grid.info.width, grid.info.height, domain)[m[K;
+[2.589s]       |       [01;31m[K~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.589s] In file included from [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/src/path_planning.cpp:6[m[K:
+[2.590s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid RRT_Planner::setDomain(std::vector<int>&)[m[K’
+[2.590s]    16 |     void [01;36m[KsetDomain[m[K(std::vector<int>& domain);
+[2.590s]       |          [01;36m[K^~~~~~~~~[m[K
+[2.590s] [01m[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+[4.498s] gmake[2]: *** [CMakeFiles/path_planning_node.dir/build.make:76: CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o] Error 1
+[4.499s] gmake[1]: *** [CMakeFiles/Makefile2:304: CMakeFiles/path_planning_node.dir/all] Error 2
+[4.499s] gmake: *** [Makefile:146: all] Error 2
+[4.502s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16

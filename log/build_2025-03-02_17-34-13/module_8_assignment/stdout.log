@@ -1,0 +1,10 @@
+[ 38%] Built target algo_astar
+[ 38%] Built target gtest_main
+[ 44%] Built target rrt_node
+[ 44%] Built target algo_grid_sweep
+[ 55%] Built target gtest
+[ 77%] Built target test_rrt_node
+[ 77%] Built target algo_rrt
+[35m[1mConsolidate compiler generated dependencies of target path_planning_node[0m
+[ 88%] Built target test_rrt
+[ 94%] [32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o[0m

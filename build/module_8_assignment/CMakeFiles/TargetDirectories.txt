@@ -1,5 +1,14 @@
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/uninstall.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/module_8_assignment_uninstall.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/occupancy_grid_node.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/algo_grid_sweep.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/algo_astar.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/rrt_node.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/algo_rrt.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/path_planning_node.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/map_republisher_node.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/test_rrt_node.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/test_rrt.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/test.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/edit_cache.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/rebuild_cache.dir
@@ -7,3 +16,12 @@
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/install.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/install/local.dir
 /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/CMakeFiles/install/strip.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/gtest.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/gtest_main.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/test.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/edit_cache.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/rebuild_cache.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/list_install_components.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/install.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/install/local.dir
+/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment/gtest/CMakeFiles/install/strip.dir

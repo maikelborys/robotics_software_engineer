@@ -1,0 +1,163 @@
+[0.000000] (-) TimerEvent: {}
+[0.000378] (-) JobUnselected: {'identifier': 'module_1_assignment'}
+[0.000585] (-) JobUnselected: {'identifier': 'module_2_assignment'}
+[0.000601] (-) JobUnselected: {'identifier': 'module_3_assignment'}
+[0.000614] (-) JobUnselected: {'identifier': 'module_4_assignment'}
+[0.000627] (-) JobUnselected: {'identifier': 'module_5_assignment'}
+[0.000639] (-) JobUnselected: {'identifier': 'module_6_assignment'}
+[0.000651] (-) JobUnselected: {'identifier': 'module_7_assignment'}
+[0.000667] (module_8_assignment) JobQueued: {'identifier': 'module_8_assignment', 'dependencies': OrderedDict()}
+[0.000683] (module_8_assignment) JobStarted: {'identifier': 'module_8_assignment'}
+[0.008759] (module_8_assignment) JobProgress: {'identifier': 'module_8_assignment', 'progress': 'cmake'}
+[0.009170] (module_8_assignment) JobProgress: {'identifier': 'module_8_assignment', 'progress': 'build'}
+[0.009723] (module_8_assignment) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment', '--', '-j16', '-l16'], 'cwd': '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'maikelborys'), ('LC_TIME', 'es_ES.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/maikelborys/ros2_ws/install/ros2_kitti_publishers/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/maikelborys'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/maikelborys/assignment_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_ES.UTF-8'), ('MANAGERPID', '1249'), ('SYSTEMD_EXEC_PID', '2047'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8426'), ('COLCON_PREFIX_PATH', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/install:/home/maikelborys/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'maikelborys'), ('JOURNAL_STREAM', '8:40148'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'maikelborys'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/maikelborys/miniconda3/condabin:/opt/ros/humble/bin:/home/maikelborys/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/maikelborys-A520-AORUS-ELITE:@/tmp/.ICE-unix/1985,unix/maikelborys-A520-AORUS-ELITE:/tmp/.ICE-unix/1985'), ('INVOCATION_ID', 'cae41b54d21b44b7b36ba8bc095b1f75'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/maikelborys/ros2_ws/install/mapping:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/maikelborys/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:514b5e31-abc1-4c80-b995-6cfa508150ff'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment'), ('TURTLEBOT3_MODEL', 'waffle_pi'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/maikelborys/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/maikelborys/ros2_ws/install/mapping:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_8_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_7_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_6_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_5_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_4_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_3_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_2_assignment:/home/maikelborys/assignment_ws/src/robotics_software_engineer/install/module_1_assignment:/home/maikelborys/ros2_ws/install/ros2_kitti_publishers:/home/maikelborys/ros2_ws/install/sensor_fusion:/home/maikelborys/ros2_ws/install/robot_sensing:/home/maikelborys/ros2_ws/install/control_systems:/opt/ros/humble')]), 'shell': False}
+[0.063549] (module_8_assignment) StdoutLine: {'line': b'[ 27%] Built target gtest_main\n'}
+[0.063882] (module_8_assignment) StdoutLine: {'line': b'[ 27%] Built target rrt_node\n'}
+[0.064035] (module_8_assignment) StdoutLine: {'line': b'[ 27%] Built target algo_astar\n'}
+[0.064154] (module_8_assignment) StdoutLine: {'line': b'[ 36%] Built target algo_grid_sweep\n'}
+[0.064279] (module_8_assignment) StdoutLine: {'line': b'[ 45%] Built target gtest\n'}
+[0.064579] (module_8_assignment) StdoutLine: {'line': b'[ 54%] Built target map_republisher_node\n'}
+[0.064720] (module_8_assignment) StdoutLine: {'line': b'[ 63%] Built target occupancy_grid_node\n'}
+[0.074520] (module_8_assignment) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target algo_rrt\x1b[0m\n'}
+[0.085428] (module_8_assignment) StdoutLine: {'line': b'[ 72%] Built target test_rrt_node\n'}
+[0.087475] (module_8_assignment) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/algo_rrt.dir/src/algo_rrt.cpp.o\x1b[0m\n'}
+[0.099786] (-) TimerEvent: {}
+[0.200059] (-) TimerEvent: {}
+[0.300383] (-) TimerEvent: {}
+[0.400716] (-) TimerEvent: {}
+[0.501046] (-) TimerEvent: {}
+[0.553578] (module_8_assignment) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX static library libalgo_rrt.a\x1b[0m\n'}
+[0.601132] (-) TimerEvent: {}
+[0.701445] (-) TimerEvent: {}
+[0.732664] (module_8_assignment) StdoutLine: {'line': b'[ 81%] Built target algo_rrt\n'}
+[0.756932] (module_8_assignment) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/test_rrt.dir/test/test_rrt.cpp.o\x1b[0m\n'}
+[0.758918] (module_8_assignment) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/path_planning_node.dir/src/path_planning.cpp.o\x1b[0m\n'}
+[0.801551] (-) TimerEvent: {}
+[0.901886] (-) TimerEvent: {}
+[1.002248] (-) TimerEvent: {}
+[1.102650] (-) TimerEvent: {}
+[1.203014] (-) TimerEvent: {}
+[1.303389] (-) TimerEvent: {}
+[1.403770] (-) TimerEvent: {}
+[1.504147] (-) TimerEvent: {}
+[1.604558] (-) TimerEvent: {}
+[1.645281] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void RRTPlannerTest_IsObstacle_Test::TestBody()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.645523] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:39:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KRRT_Planner::setDomain(std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.645608] (module_8_assignment) StderrLine: {'line': b'   39 |     \x1b[01;31m\x1b[Kplanner.setDomain(domain)\x1b[m\x1b[K;\n'}
+[1.645678] (module_8_assignment) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.645746] (module_8_assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2\x1b[m\x1b[K:\n'}
+[1.645816] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid RRT_Planner::setDomain(int, int, const std::vector<signed char>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.645889] (module_8_assignment) StderrLine: {'line': b'   16 |     void \x1b[01;36m\x1b[KsetDomain\x1b[m\x1b[K(int width, int height, const std::vector<int8_t>& occupancy_data);\n'}
+[1.645960] (module_8_assignment) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.654318] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[1.654720] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:45:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KRRT_Planner::setDomain(std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.654817] (module_8_assignment) StderrLine: {'line': b'   45 |     \x1b[01;31m\x1b[Kplanner.setDomain(domain)\x1b[m\x1b[K;\n'}
+[1.654902] (module_8_assignment) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.654991] (module_8_assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2\x1b[m\x1b[K:\n'}
+[1.655074] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid RRT_Planner::setDomain(int, int, const std::vector<signed char>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.655162] (module_8_assignment) StderrLine: {'line': b'   16 |     void \x1b[01;36m\x1b[KsetDomain\x1b[m\x1b[K(int width, int height, const std::vector<int8_t>& occupancy_data);\n'}
+[1.655245] (module_8_assignment) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.655348] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[1.656976] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void RRTPlannerTest_PlanPath_Test::TestBody()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.657079] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:68:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KRRT_Planner::setDomain(std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.657178] (module_8_assignment) StderrLine: {'line': b'   68 |     \x1b[01;31m\x1b[Kplanner.setDomain(domain)\x1b[m\x1b[K;\n'}
+[1.657275] (module_8_assignment) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.657379] (module_8_assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2\x1b[m\x1b[K:\n'}
+[1.657464] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid RRT_Planner::setDomain(int, int, const std::vector<signed char>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.657561] (module_8_assignment) StderrLine: {'line': b'   16 |     void \x1b[01;36m\x1b[KsetDomain\x1b[m\x1b[K(int width, int height, const std::vector<int8_t>& occupancy_data);\n'}
+[1.657643] (module_8_assignment) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.657725] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[1.658038] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void RRTPlannerTest_PathValidity_Test::TestBody()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.658141] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:85:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KRRT_Planner::setDomain(std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.658238] (module_8_assignment) StderrLine: {'line': b'   85 |     \x1b[01;31m\x1b[Kplanner.setDomain(domain)\x1b[m\x1b[K;\n'}
+[1.658342] (module_8_assignment) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.658429] (module_8_assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2\x1b[m\x1b[K:\n'}
+[1.658512] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid RRT_Planner::setDomain(int, int, const std::vector<signed char>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.658596] (module_8_assignment) StderrLine: {'line': b'   16 |     void \x1b[01;36m\x1b[KsetDomain\x1b[m\x1b[K(int width, int height, const std::vector<int8_t>& occupancy_data);\n'}
+[1.658678] (module_8_assignment) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.658761] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[1.659199] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void RRTPlannerTest_NoPathFound_Test::TestBody()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.659303] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:100:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KRRT_Planner::setDomain(std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.659395] (module_8_assignment) StderrLine: {'line': b'  100 |     \x1b[01;31m\x1b[Kplanner.setDomain(domain)\x1b[m\x1b[K;\n'}
+[1.659477] (module_8_assignment) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.659558] (module_8_assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2\x1b[m\x1b[K:\n'}
+[1.659640] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid RRT_Planner::setDomain(int, int, const std::vector<signed char>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.659724] (module_8_assignment) StderrLine: {'line': b'   16 |     void \x1b[01;36m\x1b[KsetDomain\x1b[m\x1b[K(int width, int height, const std::vector<int8_t>& occupancy_data);\n'}
+[1.659812] (module_8_assignment) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.659901] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[1.660048] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual void RRTPlannerTest_CorrectParentAssignment_Test::TestBody()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.660132] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:114:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KRRT_Planner::setDomain(std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.660226] (module_8_assignment) StderrLine: {'line': b'  114 |     \x1b[01;31m\x1b[Kplanner.setDomain(domain)\x1b[m\x1b[K;\n'}
+[1.660336] (module_8_assignment) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.660422] (module_8_assignment) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/test/test_rrt.cpp:2\x1b[m\x1b[K:\n'}
+[1.660505] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid RRT_Planner::setDomain(int, int, const std::vector<signed char>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.660589] (module_8_assignment) StderrLine: {'line': b'   16 |     void \x1b[01;36m\x1b[KsetDomain\x1b[m\x1b[K(int width, int height, const std::vector<int8_t>& occupancy_data);\n'}
+[1.660682] (module_8_assignment) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[1.660764] (module_8_assignment) StderrLine: {'line': b'\x1b[01m\x1b[K/home/maikelborys/assignment_ws/src/robotics_software_engineer/module_8_assignment/include/path_planning/algo_rrt.hpp:16:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 3 arguments, 1 provided\n'}
+[1.704664] (-) TimerEvent: {}
+[1.782878] (module_8_assignment) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_rrt.dir/build.make:76: CMakeFiles/test_rrt.dir/test/test_rrt.cpp.o] Error 1\n'}
+[1.783168] (module_8_assignment) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:387: CMakeFiles/test_rrt.dir/all] Error 2\n'}
+[1.783283] (module_8_assignment) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.804775] (-) TimerEvent: {}
+[1.905128] (-) TimerEvent: {}
+[2.005491] (-) TimerEvent: {}
+[2.105824] (-) TimerEvent: {}
+[2.206160] (-) TimerEvent: {}
+[2.306527] (-) TimerEvent: {}
+[2.406870] (-) TimerEvent: {}
+[2.507205] (-) TimerEvent: {}
+[2.607583] (-) TimerEvent: {}
+[2.707928] (-) TimerEvent: {}
+[2.808288] (-) TimerEvent: {}
+[2.908626] (-) TimerEvent: {}
+[3.008955] (-) TimerEvent: {}
+[3.109304] (-) TimerEvent: {}
+[3.209630] (-) TimerEvent: {}
+[3.309963] (-) TimerEvent: {}
+[3.410323] (-) TimerEvent: {}
+[3.510667] (-) TimerEvent: {}
+[3.611067] (-) TimerEvent: {}
+[3.711441] (-) TimerEvent: {}
+[3.811800] (-) TimerEvent: {}
+[3.912162] (-) TimerEvent: {}
+[4.012528] (-) TimerEvent: {}
+[4.112872] (-) TimerEvent: {}
+[4.213240] (-) TimerEvent: {}
+[4.313648] (-) TimerEvent: {}
+[4.414012] (-) TimerEvent: {}
+[4.514366] (-) TimerEvent: {}
+[4.614708] (-) TimerEvent: {}
+[4.715049] (-) TimerEvent: {}
+[4.815414] (-) TimerEvent: {}
+[4.915756] (-) TimerEvent: {}
+[5.016094] (-) TimerEvent: {}
+[5.116450] (-) TimerEvent: {}
+[5.216786] (-) TimerEvent: {}
+[5.317126] (-) TimerEvent: {}
+[5.417486] (-) TimerEvent: {}
+[5.517816] (-) TimerEvent: {}
+[5.618152] (-) TimerEvent: {}
+[5.718499] (-) TimerEvent: {}
+[5.818844] (-) TimerEvent: {}
+[5.919187] (-) TimerEvent: {}
+[6.019544] (-) TimerEvent: {}
+[6.119865] (-) TimerEvent: {}
+[6.220187] (-) TimerEvent: {}
+[6.320546] (-) TimerEvent: {}
+[6.420890] (-) TimerEvent: {}
+[6.521225] (-) TimerEvent: {}
+[6.621570] (-) TimerEvent: {}
+[6.721922] (-) TimerEvent: {}
+[6.822321] (-) TimerEvent: {}
+[6.922684] (-) TimerEvent: {}
+[7.023049] (-) TimerEvent: {}
+[7.117556] (module_8_assignment) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX executable path_planning_node\x1b[0m\n'}
+[7.123116] (-) TimerEvent: {}
+[7.223387] (-) TimerEvent: {}
+[7.323758] (-) TimerEvent: {}
+[7.424141] (-) TimerEvent: {}
+[7.456315] (module_8_assignment) StdoutLine: {'line': b'[ 95%] Built target path_planning_node\n'}
+[7.457866] (module_8_assignment) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.460635] (module_8_assignment) CommandEnded: {'returncode': 2}
+[7.468584] (module_8_assignment) JobEnded: {'identifier': 'module_8_assignment', 'rc': 2}
+[7.479042] (-) EventReactorShutdown: {}

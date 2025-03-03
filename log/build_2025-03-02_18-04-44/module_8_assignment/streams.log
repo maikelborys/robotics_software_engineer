@@ -1,0 +1,19 @@
+[0.011s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target map_republisher_node[0m
+[0.062s] [ 20%] Built target rrt_node
+[0.062s] [ 20%] Built target algo_grid_sweep
+[0.062s] [ 30%] Built target gtest_main
+[0.063s] [ 40%] [32m[1mLinking CXX executable map_republisher_node[0m
+[0.063s] [ 45%] Built target algo_astar
+[0.064s] [ 55%] Built target gtest
+[0.083s] [ 65%] Built target algo_rrt
+[0.085s] [ 75%] Built target test_rrt_node
+[0.108s] [ 85%] Built target test_rrt
+[0.108s] [ 95%] Built target path_planning_node
+[0.123s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[0.123s] (.text+0x1b): undefined reference to `main'
+[0.125s] collect2: error: ld returned 1 exit status
+[0.128s] gmake[2]: *** [CMakeFiles/map_republisher_node.dir/build.make:175: map_republisher_node] Error 1
+[0.129s] gmake[1]: *** [CMakeFiles/Makefile2:302: CMakeFiles/map_republisher_node.dir/all] Error 2
+[0.129s] gmake: *** [Makefile:146: all] Error 2
+[0.132s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16

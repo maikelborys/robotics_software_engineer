@@ -1,0 +1,47 @@
+[0.012s] Invoking command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16
+[0.109s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.398s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.628s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.639s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.661s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.686s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.716s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.837s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.852s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.144s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.329s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.363s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.418s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.721s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.727s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.834s] -- Configuring done
+[1.926s] -- Generating done
+[1.940s] -- Build files have been written to: /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment
+[1.970s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[1.970s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[1.979s] [35m[1mConsolidate compiler generated dependencies of target algo_grid_sweep[0m
+[1.979s] [  5%] [32mBuilding CXX object CMakeFiles/map_republisher_node.dir/src/map_republisher.cpp.o[0m
+[1.980s] [35m[1mConsolidate compiler generated dependencies of target algo_astar[0m
+[1.983s] [ 15%] Built target gtest_main
+[1.984s] [ 25%] Built target gtest
+[1.991s] [35m[1mConsolidate compiler generated dependencies of target rrt_node[0m
+[1.992s] [ 45%] Built target algo_grid_sweep
+[1.993s] [ 45%] Built target algo_astar
+[1.999s] [ 50%] [32m[1mLinking CXX executable map_republisher_node[0m
+[2.003s] [ 60%] Built target rrt_node
+[2.030s] [35m[1mConsolidate compiler generated dependencies of target algo_rrt[0m
+[2.030s] [35m[1mConsolidate compiler generated dependencies of target test_rrt_node[0m
+[2.043s] [ 70%] Built target algo_rrt
+[2.044s] [ 80%] Built target test_rrt_node
+[2.053s] [35m[1mConsolidate compiler generated dependencies of target test_rrt[0m
+[2.053s] [35m[1mConsolidate compiler generated dependencies of target path_planning_node[0m
+[2.056s] /usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+[2.057s] (.text+0x1b): undefined reference to `main'
+[2.059s] collect2: error: ld returned 1 exit status
+[2.060s] gmake[2]: *** [CMakeFiles/map_republisher_node.dir/build.make:175: map_republisher_node] Error 1
+[2.061s] gmake[1]: *** [CMakeFiles/Makefile2:302: CMakeFiles/map_republisher_node.dir/all] Error 2
+[2.061s] gmake[1]: *** Waiting for unfinished jobs....
+[2.067s] [ 90%] Built target test_rrt
+[2.071s] [100%] Built target path_planning_node
+[2.073s] gmake: *** [Makefile:146: all] Error 2
+[2.076s] Invoked command in '/home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/maikelborys/assignment_ws/src/robotics_software_engineer/build/module_8_assignment -- -j16 -l16

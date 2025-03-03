@@ -1,0 +1,2 @@
+/usr/bin/ar qc libalgo_grid_sweep.a CMakeFiles/algo_grid_sweep.dir/src/algo_gridsweep.cpp.o
+/usr/bin/ranlib libalgo_grid_sweep.a

@@ -1,0 +1,7 @@
+[  9%] [32mBuilding CXX object CMakeFiles/rrt_node.dir/src/algo_rrt_node.cpp.o[0m
+[ 13%] Built target algo_astar
+[ 22%] Built target algo_grid_sweep
+[ 31%] Built target gtest_main
+[ 40%] Built target gtest
+[ 50%] Built target occupancy_grid_node
+[ 59%] Built target map_republisher_node
