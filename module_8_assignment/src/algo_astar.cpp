@@ -63,14 +63,22 @@ astar_search(const nav_msgs::msg::OccupancyGrid &grid) {
             << ", Occupied cells: " << occupied_cells << std::endl;
 
   // convert indexes into xy
-  auto start_coordinates = indexToCoordinates(0, GRID_WIDTH);
-  auto goal_coordinates = indexToCoordinates(78, GRID_WIDTH);
+  //auto start_coordinates = indexToCoordinates(0, GRID_WIDTH);
+  //auto goal_coordinates = indexToCoordinates(78, GRID_WIDTH);  // Set your goal coordinates here
+  //auto goal_coordinates = indexToCoordinates(0057, GRID_WIDTH);  // Set your goal coordinates here
 
-  start_point.x = static_cast<float>(start_coordinates.first);
-  start_point.y = static_cast<float>(start_coordinates.second);
+  //start_point.x = static_cast<float>(start_coordinates.first);
+  //start_point.y = static_cast<float>(start_coordinates.second);
 
-  goal_point.x = static_cast<float>(goal_coordinates.first);
-  goal_point.y = static_cast<float>(goal_coordinates.second);
+  //goal_point.x = static_cast<float>(goal_coordinates.first);
+  //goal_point.y = static_cast<float>(goal_coordinates.second);
+
+  // Define start and goal coordinates manually
+  start_point.x = 0;  // Set your start x-coordinate here
+  start_point.y = 2;  // Set your start y-coordinate here
+
+  goal_point.x = 0;  // Set your goal x-coordinate here
+  goal_point.y = 5;  // Set your goal y-coordinate here
 
   // Print start and goal points
   std::cout << "Starting point: (" << start_point.x << ", " << start_point.y
@@ -79,6 +87,12 @@ astar_search(const nav_msgs::msg::OccupancyGrid &grid) {
   std::cout << "Map Width: " << GRID_WIDTH << ", Map Height: " << GRID_HEGHT
             << std::endl;
 
+  // Check if the goal is an obstacle
+  int goal_index = static_cast<int>(goal_point.y) * GRID_WIDTH + static_cast<int>(goal_point.x);
+  if (grid_data[goal_index] == 100) {
+    std::cout << "Goal is an obstacle!" << std::endl;
+    return path;  // Return an empty path
+  }
 
   std::priority_queue<std::shared_ptr<NodeAstar>,std::vector<std::shared_ptr<NodeAstar>>, compare_node>open_list;
   std::vector<std::vector<float>> cost_so_far(GRID_HEGHT,std::vector<float>(GRID_WIDTH, std::numeric_limits<float>::max()));

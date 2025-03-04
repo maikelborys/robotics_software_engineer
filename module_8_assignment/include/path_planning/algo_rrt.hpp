@@ -22,11 +22,12 @@ public:
     bool isGoalFound(NodeRrt& new_node, NodeRrt const& goal);
     NodeRrt findNearestNode(std::vector<NodeRrt> const& nodes, NodeRrt const& random_node);
     NodeRrt findNewConfig(NodeRrt const& nearest_node, NodeRrt const& random_node);
+    std::vector<NodeRrt> findNearbyNodes(NodeRrt const& new_node, float radius);
 
     std::vector<NodeRrt> planPath(NodeRrt const& start, NodeRrt const& goal);
 
 private:
-
+    void rewire(NodeRrt& new_node, std::vector<NodeRrt>& nearby_nodes);
 
     void Occupany_Callback();
     void publishPath(std::vector<NodeRrt> const& path);
@@ -37,13 +38,11 @@ private:
     static constexpr int GRID_WIDTH = 20;
     static constexpr int GRID_HEIGHT = 20;
     static constexpr float STEP_SIZE = 2.0F;
+    static constexpr float REWIRE_RADIUS = 5.0F;
 
     std::array<int, GRID_WIDTH * GRID_HEIGHT> DOMAIN{};
     std::vector<NodeRrt> nodes;
     std::vector<NodeRrt> path;
-
-
-
 };
 
 #endif // RRT_PLANNER_HPP

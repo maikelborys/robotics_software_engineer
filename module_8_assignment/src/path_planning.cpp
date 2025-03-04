@@ -16,6 +16,7 @@ public:
     occupancy_grid_subscriber_ =
         this->create_subscription<nav_msgs::msg::OccupancyGrid>(
             "map_repub", 10,
+            //"occupancy_grid", 10,
             std::bind(&PathPlanning::occupancyGridCallback, this,
                       std::placeholders::_1));
 
@@ -42,7 +43,7 @@ private:
       planner.setDomain(domain);
 
       NodeRrt start(0, 0);
-      NodeRrt goal(4, 5);
+      NodeRrt goal(0, 5);  // Ensure the goal is within the grid and not an obstacle
       std::vector<NodeRrt> path = planner.planPath(start, goal);
 
       if (path.empty()) {
